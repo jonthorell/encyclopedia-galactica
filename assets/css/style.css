@@ -5,6 +5,27 @@
     padding: 0;
 }
 
+header {
+    /* used for the top-heading */
+    background-color: aquamarine;
+    width: 100%;
+    height:50px;
+}
+
+header h1 {
+    /* h1 in the top-header */
+    text-align: left;
+    text-transform: capitalize;
+    color:black;
+}
+
+body {
+    background-image: url("../pictures/starfield.jpg");
+    /*in case background can not be loaded, set a background color */
+    background-color: black;
+
+}
+
 h1 {
     color:red;
 }

@@ -1,4 +1,5 @@
 * {
+    /* initial style for everything. Will be overridden where need be */
     border:none;
     margin:0;
     padding: 0;

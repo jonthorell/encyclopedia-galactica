@@ -22,10 +22,10 @@ header h1 {
     /* h1 in the top-header */
     text-align: justify;
     text-transform: capitalize;
-    color:red;
+    color: white;
 }
 
-h1 {
+h1,h6 {
     color:white;
     text-align: center;
 }
@@ -38,8 +38,8 @@ h1 {
 }
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 160px; 
+    height: auto;
+    width: 200px; 
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 60px; /* Stay at the top */
@@ -60,11 +60,24 @@ h1 {
   }
 
   article div p {
-    color: aqua;
+    color: red;
+    font-size: x-large;
   }
 
   .main {
     color:wheat;
-    margin-left: 160px; /* Same as the width of the sidebar */
+    margin-left: 200px; /* Same as the width of the sidebar */
     padding: 0px 10px;
   }
+
+  footer {
+    /* used for the footer */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: cadetblue;
+    height:50px;
+}

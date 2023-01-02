@@ -7,7 +7,64 @@
 
 header {
     /* used for the top-heading */
-    background-color: grey;
+    background-color: cadetblue;
     width: 100%;
     height:50px;
 }
+
+body {
+    background-image: url("../pictures/starfield.jpg");
+    /*in case background can not be loaded, set a background color */
+    background-color: black;
+}
+
+header h1 {
+    /* h1 in the top-header */
+    text-align: justify;
+    text-transform: capitalize;
+    color:red;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+}
+
+#isac-face {
+    width:50px;
+    height:50px;
+    float:left;
+    clear: both;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 160px; 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 60px; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px; /* Place content 60px from the top */
+    background-image: url("../pictures/starfield.jpg");
+    /*in case background can not be loaded, set a background color */
+    background-color: black;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+
+  article div p {
+    color: aqua;
+  }
+
+  .main {
+    color:wheat;
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }

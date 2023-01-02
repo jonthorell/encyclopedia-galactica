@@ -61,13 +61,17 @@ h1,h6 {
 
   article div p {
     color: red;
-    font-size: x-large;
+    font-size: large;
   }
 
   .main {
     color:wheat;
     margin-left: 200px; /* Same as the width of the sidebar */
     padding: 0px 10px;
+  }
+
+  .bibliography {
+    color:yellow
   }
 
   footer {

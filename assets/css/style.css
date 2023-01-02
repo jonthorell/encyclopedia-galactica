@@ -85,3 +85,13 @@ h1,h6 {
     background-color: cadetblue;
     height:50px;
 }
+
+table {
+  width: 100%;
+}
+
+table td {
+  border: 1px solid;
+  border-collapse: collapse;
+  text-align: center;
+}

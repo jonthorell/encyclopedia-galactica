@@ -55,14 +55,14 @@ h1,h6 {
     padding-top: 0px; /* Place content 60px from the top */
     background-image: url("../pictures/starfield.jpg");
     /*in case background can not be loaded, set a background color */
-    background-color: black;
+    background-color: black; 
   }
 
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: wheat;
     display: block;
   }
 
@@ -93,8 +93,6 @@ h1,h6 {
     font-size: larger;
   }
 
-
-
   footer {
     /* used for the footer */
     position: fixed;
@@ -124,4 +122,9 @@ table {
 
 .hor-row {
   border: 1px dashed red;
+}
+
+.active {
+  background-color: cadetblue;
+  color: white;
 }

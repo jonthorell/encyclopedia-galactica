@@ -25,10 +25,10 @@ header h1 {
     color: white;
 }
 
-header h6 {
-  /* copyright info in the top header */
-  text-align: right;
-  text-transform: capitalize;
+.flex-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
   color:white;
 }
 
@@ -67,7 +67,7 @@ h1,h6 {
   }
 
   article div p {
-    color: red;
+    color: wheat;
     font-size: large;
   }
 
@@ -78,7 +78,7 @@ h1,h6 {
   }
 
   .bibliography {
-    color:yellow;
+    color:wheat;
   }
 
   .table-center {
@@ -127,4 +127,13 @@ table {
 .active {
   background-color: cadetblue;
   color: white;
+}
+
+td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.main p {
+  float:left;
 }

@@ -137,3 +137,9 @@ td {
 .main p {
   float:left;
 }
+
+ul {
+  color: wheat;
+  list-style-type: square;
+  font-size: larger;
+}

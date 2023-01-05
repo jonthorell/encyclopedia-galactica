@@ -25,6 +25,13 @@ header h1 {
     color: white;
 }
 
+header h6 {
+  /* copyright info in the top header */
+  text-align: right;
+  text-transform: capitalize;
+  color:white;
+}
+
 h1,h6 {
     color:white;
     text-align: center;
@@ -71,8 +78,22 @@ h1,h6 {
   }
 
   .bibliography {
-    color:yellow
+    color:yellow;
   }
+
+  .table-center {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  caption {
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size: larger;
+  }
+
+
 
   footer {
     /* used for the footer */
@@ -90,12 +111,17 @@ table {
   width: 100%;
 }
 
-table td {
+/* table td {
   border-collapse: collapse;
   text-align: center;
 }
+*/
 
 .bibliography {
   text-align: center;
   caption-side: top;
+}
+
+.hor-row {
+  border: 1px dashed red;
 }

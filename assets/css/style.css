@@ -143,3 +143,7 @@ ul {
   list-style-type: square;
   font-size: larger;
 }
+
+.left-align {
+  float:left;
+}

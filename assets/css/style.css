@@ -147,3 +147,7 @@ ul {
 .left-align {
   float:left;
 }
+
+.right-align {
+  float:right;
+}

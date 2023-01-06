@@ -152,6 +152,7 @@ ul {
   float:right;
 }
 
+/* The following two classes make the embedded youtube-video responsive. Not written by me but used with permission */
 .hytPlayerWrap {
   position:relative!important;
   padding-bottom:56.25%;

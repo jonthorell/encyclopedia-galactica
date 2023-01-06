@@ -134,9 +134,9 @@ td {
   vertical-align: top;
 }
 
-.main p {
+/* .main p {
   float:left;
-}
+} */
 
 ul {
   color: wheat;
@@ -151,3 +151,20 @@ ul {
 .right-align {
   float:right;
 }
+
+.hytPlayerWrap {
+  position:relative!important;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+  display: block!important;
+  }
+  
+  .hytPlayerWrap iframe, .hytPlayerWrap object, .hytPlayerWrap embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%!important;
+  height:100%;
+  }

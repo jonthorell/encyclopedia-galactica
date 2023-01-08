@@ -204,3 +204,20 @@ ul {
   .robotics {
     font-style: italic;
   }
+
+  #timeline-table {
+    border: 1px solid red;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .summary-bg {
+    background-color: cadetblue;
+  }
+
+  .from-novel {
+    font-style: italic;
+    text-transform: capitalize;
+    color: royalblue;
+  }

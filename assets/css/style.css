@@ -221,3 +221,8 @@ ul {
     text-transform: capitalize;
     color: royalblue;
   }
+
+  .emp-red {
+    color:red;
+    font-size: x-large;
+  }

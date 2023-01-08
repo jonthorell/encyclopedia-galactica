@@ -20,7 +20,28 @@
     </header>
     <h1 class="page-title">Contact</h1>
     <article><br>
-        
+
+        <form action="https://formdump.codeinstitute.net/" method="post" class="main center-form">
+            <fieldset>
+                <label for="name">Your name:</label>
+                <input type="text" name="name" id="name" required>
+                <br><label for="email">Your E-mail</label>
+                <input type="email" name="email" id="email" required>
+                <br><label for="heard-of">Had you heard of Dr Asimov before?</label>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="heard-of" value="yes" required>
+                <label for="no">No</label>
+                <input type="radio" id="no" name="heard-of" value="no" required>
+                <br><label for="fb">Anything you think could be improved?</label>
+                <br><textarea cols="180" rows="20" id="fb" name="fb">Enter suggestions for improvement here</textarea>
+                <br><button type="reset" class="black-button"><strong>Reset form</strong></button>
+                <button type="submit" class="black-button"><strong>Submit!</strong></button>
+                <!--<label for="Reset">Reset form</label>
+                <input type="reset" value="Reset form">
+                <label for="submit">Submit</label>
+                <input type="submit" id="submit" name="submit"> -->
+            </fieldset>
+        </form>
     </article>
     <div class="sidenav">
         <nav>

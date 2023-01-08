@@ -25,13 +25,6 @@ header h1 {
     color: white;
 }
 
-.flex-container {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  color:white;
-}
-
 h1,h6 {
     color:white;
     text-align: center;
@@ -93,27 +86,15 @@ h1,h6 {
     font-size: larger;
   }
 
-  footer {
-    /* used for the footer */
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    background-color: cadetblue;
-    height:50px;
-}
-
 table {
   width: 100%;
 }
 
-/* table td {
+ table td {
   border-collapse: collapse;
   text-align: center;
 }
-*/
+
 
 .bibliography {
   text-align: center;
@@ -134,22 +115,10 @@ td {
   vertical-align: top;
 }
 
-/* .main p {
-  float:left;
-} */
-
 ul {
   color: wheat;
   list-style-type: square;
   font-size: larger;
-}
-
-.left-align {
-  float:left;
-}
-
-.right-align {
-  float:right;
 }
 
 /* The following two classes make the embedded youtube-video responsive. Not written by me but used with permission */
@@ -168,4 +137,17 @@ ul {
   left:0;
   width: 100%!important;
   height:100%;
+  }
+
+  .page-title {
+    color:aqua;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .ol-roman {
+    list-style-type: upper-roman;
+    color:wheat;
+    margin-left: 200px; /* Same as the width of the sidebar */
+    padding: 10px;
   }

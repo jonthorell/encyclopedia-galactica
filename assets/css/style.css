@@ -70,10 +70,6 @@ h1,h6 {
     padding: 0px 10px;
   }
 
-  .bibliography {
-    color:wheat;
-  }
-
   .table-center {
     width: 80%;
     margin-left: 10%;
@@ -99,10 +95,15 @@ table {
 .bibliography {
   text-align: center;
   caption-side: top;
+  color: wheat;
 }
 
 .hor-row {
   border: 1px dashed red;
+}
+
+.hor-row-nav {
+  border: 1px solid white;
 }
 
 .active {

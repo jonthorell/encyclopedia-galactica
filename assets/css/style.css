@@ -10,6 +10,8 @@ header {
     background-color: cadetblue;
     width: 100%;
     height:50px;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
 }
 
 body {
@@ -140,12 +142,6 @@ ul {
   height:100%;
   }
 
-  .page-title {
-    color:aqua;
-    text-align: center;
-    text-decoration: underline;
-  }
-
   .ol-roman {
     list-style-type: upper-roman;
     color:wheat;
@@ -225,4 +221,10 @@ ul {
   .emp-red {
     color:red;
     font-size: x-large;
+  }
+
+  .page-title {
+    color:aqua;
+    text-align: center;
+    text-decoration: underline;
   }

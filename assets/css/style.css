@@ -162,3 +162,26 @@ input {
 .black-button:hover {
   color: aqua;
 }
+
+.div-center {
+  display: flex;
+  justify-content: center;
+}
+
+#circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.bibliography {
+  text-align: center;
+  caption-side: top;
+  color: wheat;
+}
+
+caption {
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-size: larger;
+}

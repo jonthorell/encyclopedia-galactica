@@ -87,6 +87,10 @@ text-align: center;
 border: 1px solid white;
 }
 
+.hor-row  {
+  border: 1px dashed red;
+}
+
 .active {
 background-color: cadetblue;
 color: white;

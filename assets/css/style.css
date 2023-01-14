@@ -185,3 +185,42 @@ caption {
   text-decoration: underline;
   font-size: larger;
 }
+
+ul {
+  color: wheat;
+  list-style-type: square;
+  font-size: larger;
+}
+
+
+  .ol-roman {
+    list-style-type: upper-roman;
+    color:wheat;
+    margin-left: 200px; /* Same as the width of the sidebar */
+    padding: 10px;
+  }
+
+ 
+
+  #timeline-table, #timeline-table2, #timeline-table3 #timeline-table4 {
+    border: 1px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .summary-bg {
+    background-color: cadetblue;
+  }
+
+  .from-novel {
+    font-style: italic;
+    text-transform: capitalize;
+    color: royalblue;
+  }
+
+  .emp-red {
+    color:red;
+    font-size: x-large;
+  }
+

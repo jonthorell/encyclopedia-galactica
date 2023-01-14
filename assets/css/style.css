@@ -114,3 +114,51 @@ td {
   /*centers the main div that encommpasses the whole page */
   width: 100%;
 }
+
+fieldset {
+  background-image: url("../pictures/starfield.jpg");
+  background-color: black;
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+  border: 2px;
+}
+
+input {
+  margin: 5px;
+}
+
+.center-form {
+  text-align: center;
+}
+
+.button {
+  border: 2px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  background-color: black;
+}
+
+.black-button {
+  background-color: black;
+  color: white;
+}
+
+.black-button:hover {
+  color: aqua;
+}

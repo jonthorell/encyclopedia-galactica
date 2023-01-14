@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/input.css">
+    <script src="assets/javascript/input.js"></script>
+    <!--javascript borrowed from shaw at codepen-->
     <title>Contact: The Encyclopedia Galactica</title>
 </head>
 
@@ -41,9 +44,9 @@
                     <input type="radio" id="yes" name="heard-of" value="yes" required>
                     <label for="no">No</label>
                     <input type="radio" id="no" name="heard-of" value="no" required>
-                    <br><br><label for="fb">Anything you think could be improved?</label>
-                    <br><textarea cols="80" rows="20" id="fb"
-                        name="fb">Enter suggestions for improvement here</textarea>
+                    <br><br><label for="fb" class="input-sizer">Anything you think could be improved?</label>
+                    <br><textarea oninput="this.parentNode.dataset.value = this.value" placeholder="hi" cols="80"
+                        rows="20" id="fb" name="fb">Enter suggestions for improvement here</textarea>
                     <br><br><button type="reset" class="black-button"><strong>Reset form</strong></button>
                     <button type="submit" class="black-button"><strong>Submit!</strong></button>
                 </fieldset>

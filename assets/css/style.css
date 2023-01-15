@@ -220,7 +220,7 @@ ul {
   .from-novel {
     font-style: italic;
     text-transform: capitalize;
-    color: royalblue;
+    color:white;
   }
 
   .emp-red {
@@ -233,8 +233,17 @@ ul {
     background-color: rgba(38, 60, 156, 0.9);
     color:#FFF;
   }
+  .table-bg-grey-no-border {
+    background-color: rgba(38, 60, 156, 0.9);
+    color:#FFF;
+  }
 
   .links-table a:link,a:visited {
     color:wheat;
     text-decoration: double;
+  }
+
+  .active-timeline {
+    background-color: cadetblue;
+    color: white;    
   }

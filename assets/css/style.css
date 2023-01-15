@@ -228,3 +228,13 @@ ul {
     font-size: x-large;
   }
 
+  .table-bg-grey {
+    border: ridge 1px red;
+    background-color: rgba(38, 60, 156, 0.9);
+    color:#FFF;
+  }
+
+  .links-table a:link,a:visited {
+    color:wheat;
+    text-decoration: double;
+  }

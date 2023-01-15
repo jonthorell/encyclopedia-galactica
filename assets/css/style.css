@@ -1,62 +1,72 @@
 * {
   /* initial style for everything. Will be overridden where need be */
-  border:none;
-  margin:0;
+  border: none;
+  margin: 0;
   padding: 0;
 }
+
 header {
   /* used for the top-heading */
-  background-color: cadetblue; 
+  background-color: cadetblue;
   width: 100%;
-  height:50px;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  }
-  
+  height: 50px;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+}
+
 body {
-background-image: url("../pictures/starfield.jpg");
-/*in case background can not be loaded, set a background color */
-background-color: black;
+  background-image: url("../pictures/starfield.jpg");
+  /*in case background can not be loaded, set a background color */
+  background-color: black;
 }
 
 .main {
-color:wheat;
-margin-left: 200px; /* Same as the width of the sidebar */
-padding: 0px 200px;
+  color: wheat;
+  margin-left: 200px;
+  /* Same as the width of the sidebar */
+  padding: 0px 200px;
 }
 
 header h1 {
-/* h1 in the top-header */
-text-align: justify;
-text-transform: capitalize;
-color: white;
+  /* h1 in the top-header */
+  text-align: justify;
+  text-transform: capitalize;
+  color: white;
 }
 
-header h1,h6 {
+header h1,
+h6 {
   /* headers in top bar */
-color:white;
-text-align: center;
+  color: white;
+  text-align: center;
 }
 
 #isac-face {
-width:50px;
-height:50px;
-float:left;
-clear: both;
+  width: 50px;
+  height: 50px;
+  float: left;
+  clear: both;
 }
 
 .sidenav {
   height: auto;
-  width: 200px; 
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 60px; /* Stay at the top */
+  width: 200px;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 60px;
+  /* Stay at the top */
   left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 0px; /* Place content 60px from the top */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 0px;
+  /* Place content 60px from the top */
   background-image: url("../pictures/starfield.jpg");
   /*in case background can not be loaded, set a background color */
-  background-color: black; 
+  background-color: black;
 }
 
 .sidenav a {
@@ -75,31 +85,31 @@ clear: both;
 
 
 table {
-width: 100%;
+  width: 100%;
 }
 
 table td {
-border-collapse: collapse;
-text-align: center;
+  border-collapse: collapse;
+  text-align: center;
 }
 
 .hor-row-nav {
-border: 1px solid white;
+  border: 1px solid white;
 }
 
-.hor-row  {
+.hor-row {
   border: 1px dashed red;
 }
 
 .active {
-background-color: cadetblue;
-color: white;
+  background-color: cadetblue;
+  color: white;
 }
 
 td {
   text-align: left;
   vertical-align: top;
-  color:wheat;
+  color: wheat;
   font-size: large;
 }
 
@@ -108,7 +118,7 @@ td {
 }
 
 .page-title {
-  color:aqua;
+  color: aqua;
   padding-top: 60px;
   text-align: center;
   text-decoration: underline;
@@ -197,53 +207,76 @@ ul {
 }
 
 
-  .ol-roman {
-    list-style-type: upper-roman;
-    color:wheat;
-    margin-left: 200px; /* Same as the width of the sidebar */
-    padding: 10px;
-  }
+.ol-roman {
+  list-style-type: upper-roman;
+  color: wheat;
+  margin-left: 200px;
+  /* Same as the width of the sidebar */
+  padding: 10px;
+}
 
- 
 
-  #timeline-table, #timeline-table2, #timeline-table3 #timeline-table4 {
-    border: 1px;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
 
-  .summary-bg {
-    background-color: cadetblue;
-  }
+#timeline-table,
+#timeline-table2,
+#timeline-table3 #timeline-table4 {
+  border: 1px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
-  .from-novel {
-    font-style: italic;
-    text-transform: capitalize;
-    color:white;
-  }
+.summary-bg {
+  background-color: cadetblue;
+}
 
-  .emp-red {
-    color:red;
-    font-size: x-large;
-  }
+.from-novel {
+  font-style: italic;
+  text-transform: capitalize;
+  color: white;
+}
 
-  .table-bg-grey {
-    border: ridge 1px red;
-    background-color: rgba(38, 60, 156, 0.9);
-    color:#FFF;
-  }
-  .table-bg-grey-no-border {
-    background-color: rgba(38, 60, 156, 0.9);
-    color:#FFF;
-  }
+.emp-red {
+  color: red;
+  font-size: x-large;
+}
 
-  .links-table a:link,a:visited {
-    color:wheat;
-    text-decoration: double;
-  }
+.table-bg-grey {
+  border: ridge 1px red;
+  background-color: rgba(38, 60, 156, 0.9);
+  color: #FFF;
+}
 
-  .active-timeline {
-    background-color: cadetblue;
-    color: white;    
+.table-bg-grey-no-border {
+  background-color: rgba(38, 60, 156, 0.9);
+  color: #FFF;
+}
+
+.links-table a:link,
+a:visited {
+  color: wheat;
+  text-decoration: double;
+}
+
+.active-timeline {
+  background-color: cadetblue;
+  color: white;
+}
+
+/* hamburger-menu */
+
+/* hide sidenav */
+
+@media screen and (max-width: 600px) {
+  #sidenav {
+    display: none;
   }
+}
+
+/* hide toptext */
+
+@media screen and (max-width: 800px) {
+  #published {
+    display: none;
+  }
+}

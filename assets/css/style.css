@@ -37,8 +37,7 @@ header h1 {
   color: white;
 }
 
-header h1,
-h6 {
+header h1,h6 {
   /* headers in top bar */
   color: white;
   text-align: center;
@@ -96,6 +95,7 @@ table td {
 
 .hor-row-nav {
   border: 1px solid white;
+  width:50%; margin-left:25% !important; margin-right:25% !important;
 }
 
 .hor-row {
@@ -118,6 +118,7 @@ td {
   color: wheat;
   font-size: large;
 }
+
 .robotics {
   font-style: italic;
 }
@@ -294,10 +295,19 @@ a:visited {
 /* hide sidenav on small screen*/
 
 @media screen and (max-width: 600px) {
+  #side-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
 
   /* hamburger-menu */
   /* has been adapted by me to fit my needs, but mostly done by
-  https://codepen.io/alvarotrigo/pen/ExwgbZv */
+  https://codepen.io/alvarotrigo/pen/ExwgbZv 
+  Styling has been changed and added that it only shows when size is 600px and less*/
+
+
 
   *,
   *:before,
@@ -305,8 +315,15 @@ a:visited {
     box-sizing: border-box;
   }
 
-  #side-nav {
-    display: none;
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    color: #e0e4cc;
+    font-size: 1.2em;
+    line-height: 1.6;
+    overflow-x: hidden;
   }
 
   label .menu {
@@ -316,14 +333,12 @@ a:visited {
     z-index: 100;
     width: 200px;
     height: 200px;
-    background-image: url("../pictures/starfield.jpg");
-    background-color: black;
+    background: #FFF;
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
     cursor: pointer;
-    display: block;
 
   }
 
@@ -366,8 +381,7 @@ a:visited {
   }
 
   label input:checked+.menu {
-    background-image: url("../pictures/starfield.jpg");
-    background-color: black;
+    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
     border-radius: 0;
 
   }
@@ -415,6 +429,6 @@ a:visited {
     text-decoration: none;
 
   }
+
+
 }
-
-

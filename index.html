@@ -17,7 +17,7 @@
         <header>
             <a href="index.html"><img src="assets/pictures/azimov.png" alt="Isac Azimov" id="isac-face"></a>
             <h1>the encyclopedia galactica</h1>
-            <h6>(as published by the Encyclopedia Galactica Publishing Company, 116th Edition, published 1020 F.E) (c)
+            <h6 id="published">(as published by the Encyclopedia Galactica Publishing Company, 116th Edition, published 1020 F.E) (c)
                 The 'It Works On My System Group', Ltd. 2022-2023</h6>
     </div>
     </header>
@@ -25,7 +25,44 @@
         <h1 class="page-title">About</h1>
     </section>
 
+<section>
+    <label>
+        <input type="checkbox">
+        <span class="menu"> <span class="hamburger"></span></span>
+
+        <ul class="main">
+            <nav id="hide-menu">
+                <!-- should not be seen when screen > 600 -->
+                <a href="index.html">About</a>
+                <a href="bibliography.html">Bibliography</a>
+                <a href="timeline.html">Timeline</a>
+                <a href="quotes.html">Quotes</a>
+                <a href="media.html">Media</a>
+                <a href="contact.html">Contact</a>
+                <hr class="hor-row-nav">
+                <table>
+                    <tr>
+                        <td><a href="https://twitter.com/home?lang=en" target="_blank"
+                                aria-label="Link to twitter (opens in new tab)"><i class="fa-brands fa-twitter"></i></a>
+                        </td>
+                        <td><a href="https://www.facebook.com/" target="_blank"
+                                aria-label="Link to facebook (opens in new tab)"><i
+                                    class="fa-brands fa-facebook"></i></a></td>
+                        <td><a href="https://www.instagram.com/" target="_blank"
+                                aria-label="Link to Instagram (opens in new tab)"><i
+                                    class="fa-brands fa-instagram"></i></a></td>
+                    </tr>
+                </table>
+                
+            </nav>
+            
+        </ul>
+
+    </label>
+</section>
+
     <section>
+        
         <table id="main-table" class="table-center">
             <tr>
                 <td><br><br><img src="assets/pictures/who-is-isaac-asimov.jpg" alt="Drawing of Isaac Asimov"></td>
@@ -75,7 +112,8 @@
         </table>
     </section>
 
-    <div class="sidenav">
+    <div class="sidenav" id="side-nav">
+         <!--Should be hidden when screen size is less than 600-->
         <nav>
             <a href="index.html" class="active">About</a>
             <a href="bibliography.html">Bibliography</a>

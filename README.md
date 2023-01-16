@@ -28,3 +28,4 @@ table.
     }
 
     might look odd. Why not just use a class instead? At first I used the idea to see that I got the style to apply exactly where I wanted it to. Then I thought: why not keep it like that in case I want to style the different parts differently? I ended up not doing that, but the flexibility is there.
+9. The theming for the hamburger-menu looked wrong when page has more info than the test-page. Removed the background-image to rectify.

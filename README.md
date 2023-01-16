@@ -8,6 +8,11 @@ That is to say, this project borrows from project idea one. The difference is of
 
 Since I am no graphic artist I have "borrowed" images from whereever I could find suitable ones.
 
+Layout has been checked on built-in screen of laptop 1920x1080, on the external display (2400x3000)
+as well as some "simulated" sizes. Some problems did not show up on the external display but when
+used on the built-in screen the problems showed up. They were rater superficial in nature and
+could easily be resolved.
+
 Problems encountered. Either by myself or by my mentor.
 -------------------------------------------------------
 
@@ -18,7 +23,7 @@ table.
 4. The menu-text at the top of every-page was obscured partially by the top-bar. Fixed by some additional padding.
 5. The layout was often changing in size which made the site hard to work with. (hopefully) fixed by adding a <div> that encompasses the whole page and then applies a width: of 100% to its class.
 7. The timeline-page borders on information overload. Fixed by adding <details><summary> popouts to provide further information where necessary (and styled differently so the popout text stands out). I also added a special style in the menubar-tables to indicate clearer which part of the page you're on. In the same manner as the sidebar links, i.e. using a active-class.
-7. Two pages (contact and media) uses more than one included css-file. That's because those pages uses some code from external "libraries" and how-tos and I wanted to avoid potential name-clashes on pages where those addition classes would not be in use. Not to mention, to make it clear what code was written by me and which was adapted/used from other sources. In the same vein as the hamburger menu that is.
+7. Two pages (contact and media) uses more than one included css-file. That's because those pages uses some code from external "libraries" and how-tos and I wanted to avoid potential name-clashes on pages where those addition classes would not be in use. Not to mention, to make it clear what code was written by me and which was adapted/used from other sources. In the same vein as the hamburger menu that is. So every html-file uses at least two css-files: style.css and hamburger.css. Two uses three.
 8. The css for 
     #timeline-table, #timeline-table2, #timeline-table3 #timeline-table4 {
         border: 1px;
@@ -28,7 +33,7 @@ table.
     }
 
     might look odd. Why not just use a class instead? At first I used the id-idea to see that I got the style to apply exactly where I wanted it to. Then I thought: why not keep it like that in case I want to style the different parts differently? I ended up not doing that, but the flexibility is there should I want to change it.
-9. The theming for the hamburger-menu looked wrong when page has more info than the test-page. Removed the background-image to rectify.
+9. The theming for the hamburger-menu looked wrong when page has more info than the test-page. Removed the background-image to rectify. The test-page is still a part of the project for testing-purposes but is not linked anywhere.
 10. The title-text flows out of the title-bar at lower resolutions. Fixed by some media-queries and altering the font-size of h1. Might be a better way of doing it, but probably involves some javascripting.
 11. When resizing the browser-window, images can end up partially covered by the side-bar. An additional div fixed that problem.
 

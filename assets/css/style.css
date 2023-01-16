@@ -80,6 +80,7 @@ header h1,h6 {
 /* styles the sidenav */
   height: auto;
   width: 200px;
+  /*position: absolute;*/
   position: fixed;
   /* Stay in place */
   z-index: 1;

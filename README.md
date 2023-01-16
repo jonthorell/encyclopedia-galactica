@@ -11,7 +11,7 @@ Since I am no graphic artist I have "borrowed" images from whereever I could fin
 Problems encountered. Either by myself or by my mentor.
 -------------------------------------------------------
 
-1. The navigation bar kinda destroyed the layout. Was fixed by using a hamburger-menu when screensize is 600px and lower.
+1. The navigation bar kinda destroyed the layout. Was fixed by using a hamburger-menu when screensize is 600px and lower. NOTE: my knowledge of css is not yet good enough to do that part on my own so the code for that is borrowed and adjusted to suit my site. More details are available in comments in the css-file.
 2. The contrast in the bibliography and timeline-pages made it hard to read the text. Fixed by both styling the links-colors to something else as well as adding a intermediary semi-passthru layer between the background image and the
 table.
 3. The layer mentioned aboved is styled differently on bibliography and timeline. The reason is that the red border used on bibliography suits that page since the two boxes are kinda the opposites of one-another. On the timeline-page though the red border would distract from the flow of the page.
@@ -29,3 +29,6 @@ table.
 
     might look odd. Why not just use a class instead? At first I used the idea to see that I got the style to apply exactly where I wanted it to. Then I thought: why not keep it like that in case I want to style the different parts differently? I ended up not doing that, but the flexibility is there.
 9. The theming for the hamburger-menu looked wrong when page has more info than the test-page. Removed the background-image to rectify.
+BUGS
+10. BUG: when resizing the browser-window, images can end up partially covered by the side-bar. Not fixed yet.
+11. BUG: The title-text flows out of the title-bar at lower resolutions.

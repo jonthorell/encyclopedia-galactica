@@ -69,6 +69,7 @@ header h1,h6 {
 }
 
 #isac-face {
+  /* styles Isacs face in the top-"menu" */
   width: 50px;
   height: 50px;
   float: left;
@@ -76,6 +77,7 @@ header h1,h6 {
 }
 
 .sidenav {
+/* styles the sidenav */
   height: auto;
   width: 200px;
   position: fixed;
@@ -95,6 +97,7 @@ header h1,h6 {
 }
 
 .sidenav a {
+  /* styles the links on the sidebar */
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -103,36 +106,33 @@ header h1,h6 {
 }
 
 .table-center {
+  /* make sure tables are centered */
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
 }
 
-
-table {
-  width: 100%;
-}
-
 table td {
+  /* Remove double borders on tables */
   border-collapse: collapse;
   text-align: center;
 }
 
 .hor-row-nav {
+  /* all hr should be 1px thick, solid and white as well as centered */
   border: 1px solid white;
   width:50%; margin-left:25% !important; margin-right:25% !important;
 }
 
-.hor-row {
-  border: 1px dashed red;
-}
 
 .active {
+  /* styles the current link in sidenav page */
   background-color: cadetblue;
   color: white;
 }
 
 td {
+  /* styles ttd-fields */
   text-align: left;
   vertical-align: top;
   color: wheat;
@@ -140,15 +140,18 @@ td {
 }
 
 .p_bibliography {
+  /* styles the <p> on bibliography page */
   color: wheat;
   font-size: large;
 }
 
 .robotics {
+  /* styles the 3 laws of robotics on index.html */
   font-style: italic;
 }
 
 .page-title {
+  /* styles the page-title (i.e. about) */
   color: aqua;
   padding-top: 60px;
   text-align: center;
@@ -161,6 +164,7 @@ td {
 }
 
 fieldset {
+  /* this and the following classes styles the contact-form page */
   background-image: url("../pictures/starfield.jpg");
   background-color: black;
   display: block;
@@ -214,31 +218,36 @@ input {
 }
 
 #circle {
+  /* makes page logo (bibliography) circular */
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
 .bibliography {
+  /* styles the table on bibliography page */
   text-align: center;
   caption-side: top;
   color: wheat;
 }
 
 caption {
+  /* styles the tables with a caption - bibliography for example */
   text-transform: capitalize;
   text-decoration: underline;
   font-size: larger;
 }
 
 ul {
+  /* styles the list on quotes page */
   color: wheat;
-  list-style-type: square;
+  list-style-type: "→";
   font-size: larger;
 }
 
 
 .ol-roman {
+  /* styles the list on media page */
   list-style-type: upper-roman;
   color: wheat;
   margin-left: 200px;
@@ -251,6 +260,7 @@ ul {
 #timeline-table,
 #timeline-table2,
 #timeline-table3 #timeline-table4 {
+  /* styles the different "era" tables on timeline page */
   border: 1px;
   width: 80%;
   margin-left: 10%;
@@ -258,30 +268,37 @@ ul {
 }
 
 .summary-bg {
+  /* used to style the > popout menus so they stand out */
   background-color: cadetblue;
 }
 
 .from-novel {
+  /* used to set the style the novel-names so they stand out (timeline page) */
   font-style: italic;
   text-transform: capitalize;
   color: white;
 }
 
 .emp-red {
+  /* used to set the text-color to red on the 'pay attention to' part on the timeline page */
   color: red;
   font-size: x-large;
 }
 
 .table-bg-grey {
+  /* used to set the semi-transparant table on bibliography page */
   border: ridge 1px red;
   background-color: rgba(38, 60, 156, 0.9);
   color: #FFF;
 }
 
 .table-bg-grey-no-border {
+  /* used to set the semi-transparant table on timetable page */
   background-color: rgba(38, 60, 156, 0.9);
   color: #FFF;
 }
+
+/* used to style links so they are clearly visible */
 
 .links-table a:link,
 a:visited {
@@ -290,6 +307,7 @@ a:visited {
 }
 
 .active-timeline {
+  /* Outlines the current "page" in the table for the timeline page*/
   background-color: cadetblue;
   color: white;
 }

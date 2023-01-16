@@ -29,6 +29,9 @@ table.
 
     might look odd. Why not just use a class instead? At first I used the idea to see that I got the style to apply exactly where I wanted it to. Then I thought: why not keep it like that in case I want to style the different parts differently? I ended up not doing that, but the flexibility is there.
 9. The theming for the hamburger-menu looked wrong when page has more info than the test-page. Removed the background-image to rectify.
-BUGS
-10. BUG: when resizing the browser-window, images can end up partially covered by the side-bar. Not fixed yet.
-11. BUG: The title-text flows out of the title-bar at lower resolutions.
+10. The title-text flows out of the title-bar at lower resolutions. Fixed by some media-queries and altering the font-size of h1. Might be a better way of doing it, but probably involves some javascripting.
+Remaining BUGS
+11. BUG: when resizing the browser-window, images can end up partially covered by the side-bar. Not fixed yet.
+
+
+

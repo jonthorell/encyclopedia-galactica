@@ -5,6 +5,31 @@
   padding: 0;
 }
 
+/* used to get the main title to adjust size according to screen-size. A bit clumsy, but the only method I could think of. Probably not perfect either. */
+
+h1 {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 720px){
+  h1 {
+      font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  h1 {
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  h1 {
+      font-size: 12px;
+  }
+}
+
+
 header {
   /* used for the top-heading */
   background-color: cadetblue;
@@ -429,6 +454,4 @@ a:visited {
     text-decoration: none;
 
   }
-
-
 }

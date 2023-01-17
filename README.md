@@ -1,5 +1,5 @@
 # Enyclopedia Galactica
-Readme file for the Encyclopedia Galactica project at Code Institute (html/css only).
+Readme file for the Encyclopedia Galactica project at Code Institute.
 
 Despite the title, the project aim is nowhere near creating an online encyclopedia.
 
@@ -32,3 +32,14 @@ Provides a contact-form if the user wants to get in touch with the site-owner wi
 ## Testing
 Layout has been checked on built-in screen of laptop 1920x1080, on the external display (2400x3000)
 as well as some "simulated" sizes using devtools. Some problems did not show up on the external display (or the simulated sizes for that matter) but when used on the built-in screen the problems showed up. They were rather superficial in nature and could easily be resolved. Some by enclosing it in an additional div-tag properly styled by css, some because the responsiveness was broken because of syntax errors and the like. Details follows in the list of bugs encountered.
+## File names and hierarchy
+All file-names are consistently in lower-case and with the appropiate extension (usually .html or .css)
+The html-files are in the root-folder
+The external files are all located in the assets subfolder. In there you have the folders css, javascript, OLD, and pictures.
+OLD is not really used. It is there as a "backup" before a hamburger-menu was added so the assessors can see (if they choose to) look what the code looked like before I added code that was not my own.
+The javascript folder contains one script, referenced by the contact-page. It was NOT written by me but was added to provide some mean of re-sizing the input form. Details in css-file and under credits.
+The css-folder contains four files.
+1. Style.css is referenced by all html-files
+2. Hamburger.css is also referenced by all html-files.
+3. The reason for this is to separate code by me (style.css) from those by another (hamburger.css). Credits are included in the files.
+4. input.css and player.css are only used in contact.html and media.html respectively. They are also separated from the main style.css for the same reason as #3, and also to avoid potential name-clashes.

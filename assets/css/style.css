@@ -63,10 +63,15 @@ header h1 {
 }
 
 header h1,
-h6 {
+h2 {
   /* headers in top bar */
   color: white;
   text-align: center;
+}
+
+header h2 {
+  /* decrease the font-size of h2 in header */
+  font-size: xx-small;
 }
 
 #isac-face {
@@ -343,4 +348,8 @@ a:visited {
   #side-nav {
     display: none;
   }
+}
+
+#photo-index {
+  border: 1px red solid;
 }

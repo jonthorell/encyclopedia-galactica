@@ -1,3 +1,4 @@
+
 Readme file for the Encyclopedia Galactica Milestone1 project at Code Institute (html/css only).
 
 The title is a bit easy to misinterpret I suppose since the aim is nowhere near creating an online encyclopedia.

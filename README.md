@@ -12,9 +12,15 @@ The site is almost entirely written in pure html/css with some javascript in the
 # Features
 For now the site consists of 6 pages. At the top of the page a banner will always be there to make sure there is no mistaking what site you're on as well as showing copyright information. On the left-hand side there will always be a navigation bar with links to the other parts of the site (and highlighting which you're currently on) as well as links to social media. Both will adapt to different resolutions.
 
+"Always" on the left-hand side is not quite true. When the screen-resolution is lower than 600px wide, it gets replaced by a hamburger-menu.
+
+For additonal clarity for newbies, "pop-outs" has been enabled so you get at ">" where an additonal comment may be necessary.
+
 Every html-page has been validated as has the css-files. The various pages has also been
 checked in lighthouse, and been adjusted according to the warnings the various tools
 provided.
+
+
 
 ## About
 Provides some introductory text and background.
@@ -90,6 +96,10 @@ https://codepen.io/shshaw
 
 Youtube no-related-videos-and responsiveness:
 https://www.maxlaumeister.com/articles/hide-related-videos-in-youtube-embeds/
+
+Some icono-graphy provided by Font-awsome
+
+https://fontawesome.com/
 
 
 

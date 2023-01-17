@@ -43,3 +43,55 @@ The css-folder contains four files.
 2. Hamburger.css is also referenced by all html-files.
 3. The reason for this is to separate code by me (style.css) from those by another (hamburger.css). Credits are included in the files.
 4. input.css and player.css are only used in contact.html and media.html respectively. They are also separated from the main style.css for the same reason as #3, and also to avoid potential name-clashes.
+# Bugs encountered and fixed
+The navigation bar kinda destroyed the layout in lower resolutions. Was fixed by using a hamburger-menu when screensize is 600px and lower. NOTE: my knowledge of css is not yet good enough to do that part on my own so the code for that is borrowed and adjusted to suit my site. More details are available in comments in the css-file. Everything regarding css that relates to the hamburger-menu is in the hamburger.css file, to clearly separate my code from someone elses.
+
+The contrast in the bibliography and timeline-pages made it hard to read the text. Fixed by both styling the links-colors to something else as well as adding a intermediary semi-passthru layer between the background image and the table.
+
+The layer mentioned aboved is styled differently on bibliography and timeline. The reason is that the red border used on bibliography suits that page since the two boxes are kinda the opposites of one-another. On the timeline-page though the red border would distract from the flow of the page.
+
+The menu-text at the top of every-page was obscured partially by the top-bar. Fixed by some additional padding (the "About" on the start-page for example). It could have been resolved by removing the text altogether but I found it best to leave it there. That's because the sidebar is removed in lower resolutions so it's not immediately obvious where you are in the page without that piece of text.
+
+The layout was often changing in size which made the site hard to work with. (hopefully) fixed by adding a div that encompasses the whole page and then applies a width: of 100% to its class.
+
+The timeline-page borders on information overload. Fixed by adding "details" & "summary" tag popouts to provide further information where necessary (and styled differently so the popout text stands out). I also added a special style in the menubar-tables to indicate clearer which part of the page you're on. In the same manner as the sidebar links, i.e. using a active-class.
+
+Two pages (contact and media) uses additional included css-files. That's because those pages uses some code from external "libraries" and how-tos and I wanted to avoid potential name-clashes on pages where those additional classes would not be in use. Not to mention, to make it clear what code was written by me and which was adapted/used from other sources. In the same vein as the hamburger menu that is. So every html-file uses at least two css-files: style.css and hamburger.css. Two uses three. Details included in the respective css-file.
+
+The css for "#timeline-table, #timeline-table2, #timeline-table3, #timeline-table4"
+
+might look odd. Why not just use a class instead? At first I used the id-idea to see that I got the style to apply exactly where I wanted it to. Then I thought: why not keep it like that in case I want to style the different parts differently? I ended up not doing that, but the flexibility is there should I want to change it.
+
+The theming for the hamburger-menu looked wrong when page has more info than the test-page. Removed the background-image to rectify. The test-page is still a part of the project for testing-purposes but is not linked anywhere.
+
+The title-text flows out of the title-bar at lower resolutions. Fixed by some media-queries and altering the font-size of h1. Might be a better way of doing it, but probably involves some javascripting. It seems to work though.
+
+When resizing the browser-window, images can end up partially covered by the side-bar. An additional div fixed that problem.
+
+## Bugs yet unfixed
+
+Timeline page
+
+The main-table with the events is not resized the same way as the menu-tables when the resolution changes.
+
+## To-Do
+
+Add alt="Whatever" to all links in nav-menu (hamburger and on screen)
+
+## Credits
+
+Images found using google-search (more precise locations and/or credits can be provided if necessary, although I can not be sure that the site I found the images on is authorative).
+
+Hamburger-menu code:
+https://codepen.io/alvarotrigo/pen/ExwgbZv
+
+Input-resize code:
+https://codepen.io/shshaw
+
+Youtube no-related-videos-and responsiveness:
+https://www.maxlaumeister.com/articles/hide-related-videos-in-youtube-embeds/
+
+
+
+
+

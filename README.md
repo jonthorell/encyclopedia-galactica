@@ -21,7 +21,6 @@ checked in lighthouse, and been adjusted according to the warnings the various t
 provided.
 
 
-
 ## About
 Provides some introductory text and background.
 ![about-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/about.PNG?raw=true)
@@ -79,6 +78,10 @@ The title-text flows out of the title-bar at lower resolutions. Fixed by some me
 
 When resizing the browser-window, images can end up partially covered by the side-bar. An additional div fixed that problem.
 
+Lighthouse warned about missing width= and height= values in img src. Added.
+
+Lighthouse warned about forgotten aria-label tags, added.
+
 ## Bugs yet unfixed
 
 Timeline page
@@ -88,10 +91,7 @@ Timeline page
 The main-table with the events is not resized the same way as the menu-tables when the resolution changes. So the page can end up looking like above, which is not how it is supposed to look. The two tables should always
 be equal in size horizontally. 
 
-
-## To-Do
-
-Add alt="Whatever" to all links in nav-menu (hamburger and on screen)
+Some scaling problems so the main part is kinda hidden in lower resolutions.
 
 ## Credits
 

@@ -83,7 +83,11 @@ When resizing the browser-window, images can end up partially covered by the sid
 
 Timeline page
 
-The main-table with the events is not resized the same way as the menu-tables when the resolution changes.
+![error-resize](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/resize-error.PNG?raw=true)
+
+The main-table with the events is not resized the same way as the menu-tables when the resolution changes. So the page can end up looking like above, which is not how it is supposed to look. The two tables should always
+be equal in size horizontally. 
+
 
 ## To-Do
 

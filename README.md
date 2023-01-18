@@ -37,11 +37,12 @@ A list of some more or less, in my view, funny quotes from Dr Asimov.
 ![quotes-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/quotes.PNG?raw=true)
 ## Media
 Some information on other media Asimov's novels has been converted into.
+![media-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/media.png?raw=true)
 ## Contact
 Provides a contact-form if the user wants to get in touch with the site-owner with feedback.
+![contact-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/contact.PNG?raw=true)
 ## Testing
-Layout has been checked on built-in screen of laptop 1920x1080, on the external display (2400x3000)
-as well as some "simulated" sizes using devtools. Some problems did not show up on the external display (or the simulated sizes for that matter) but when used on the built-in screen the problems showed up. They were rather superficial in nature and could easily be resolved. Some by enclosing it in an additional div-tag properly styled by css, some because the responsiveness was broken because of syntax errors and the like. Details follows in the list of bugs encountered.
+Layout has been checked on built-in screen of laptop 1920x1080, on the external display (2560x1440) in Chrome and Edge as well as some "simulated" sizes using devtools. Some problems did not show up on the external display (or the simulated sizes for that matter) but when used on the built-in screen the problems showed up. They were rather superficial in nature and could easily be resolved. Some by enclosing it in an additional div-tag properly styled by css, some because the responsiveness was broken because of syntax errors and the like. Details follows in the list of bugs encountered.
 ## File names and hierarchy
 All file-names are consistently in lower-case and with the appropiate extension (usually .html or .css)
 The html-files are in the root-folder
@@ -54,7 +55,7 @@ The css-folder contains four files.
 3. The reason for this is to separate code by me (style.css) from those by another (hamburger.css). Credits are included in the files.
 4. input.css and player.css are only used in contact.html and media.html respectively. They are also separated from the main style.css for the same reason as #3, and also to avoid potential name-clashes.
 # Bugs encountered and fixed
-The navigation bar kinda destroyed the layout in lower resolutions. Was fixed by using a hamburger-menu when screensize is 600px and lower. NOTE: my knowledge of css is not yet good enough to do that part on my own so the code for that is borrowed and adjusted to suit my site. More details are available in comments in the css-file. Everything regarding css that relates to the hamburger-menu is in the hamburger.css file, to clearly separate my code from someone elses.
+The navigation bar kinda destroyed the layout in lower resolutions. Was fixed by using a hamburger-menu when screensize is 600px and lower. When in those resolutions, the sidenav is hidden from view. NOTE: my knowledge of css is not yet good enough to do that part on my own so the code for that is borrowed and adjusted to suit my site. More details are available in comments in the css-file. Everything regarding css that relates to the hamburger-menu is in the hamburger.css file, to clearly separate my code from someone elses.
 
 The contrast in the bibliography and timeline-pages made it hard to read the text. Fixed by both styling the links-colors to something else as well as adding a intermediary semi-passthru layer between the background image and the table.
 
@@ -72,9 +73,9 @@ The css for "#timeline-table, #timeline-table2, #timeline-table3, #timeline-tabl
 
 might look odd. Why not just use a class instead? At first I used the id-idea to see that I got the style to apply exactly where I wanted it to. Then I thought: why not keep it like that in case I want to style the different parts differently? I ended up not doing that, but the flexibility is there should I want to change it.
 
-The theming for the hamburger-menu looked wrong when page has more info than the test-page. Removed the background-image to rectify. The test-page is still a part of the project for testing-purposes but is not linked anywhere.
+The theming for the hamburger-menu looked wrong when page has more info than the test-page (when it was themed to use the same starfield-background as the rest of the pages that is). Removed the background-image to rectify. The test-page is still a part of the project for testing-purposes but is not linked anywhere.
 
-The title-text flows out of the title-bar at lower resolutions. Fixed by some media-queries and altering the font-size of h1. Might be a better way of doing it, but probably involves some javascripting. It seems to work though.
+The title-text flows out of the title-bar at lower resolutions. Fixed by some media-queries and altering the font-size of h1. Might be a better way of doing it, but probably involves some javascripting. It seems to work though. The h2 suffered from a similar thing and a media-query that hides it when the resolution is less than 800px wide fixes the problem there.
 
 When resizing the browser-window, images can end up partially covered by the side-bar. An additional div fixed that problem.
 

@@ -24,13 +24,17 @@ provided.
 
 ## About
 Provides some introductory text and background.
+![about-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/about.PNG?raw=true)
 ## Bibliography
 Provides the canonincal set of novels that Isaac Asimov himself wrote as a part of this future
 timeline.
+![bibliography-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/bibiliography.PNG?raw=true)
 ## Timeline
 A more-or-less complete timeline. It can be expanded quite a lot, but the general timeline is there.
+![timeline-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/timeline.PNG?raw=true)
 ## Quotes
 A list of some more or less, in my view, funny quotes from Dr Asimov.
+![quotes-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/quotes.PNG?raw=true)
 ## Media
 Some information on other media Asimov's novels has been converted into.
 ## Contact

@@ -79,6 +79,9 @@ Lighthouse warned about missing width= and height= values in img src. Added.
 
 Lighthouse warned about forgotten aria-label tags, added.
 
+Validation on media.html complained about a deprecation option to iframe and that css should be used instead. The code was borrowed (and properly credited), but I decided to redo it in css instead of the old-fashioned way.
+See id #no-iframe-border in style.css.
+
 ## Bugs yet unfixed
 
 Timeline page
@@ -95,13 +98,15 @@ Some scaling problems so the main part is kinda hidden in lower resolutions.
 
 Every html-page has been validated as has the css-files. 
 
-index.html, bibliography.html, timeline.html, quotes.html
+index.html, bibliography.html, timeline.html, quotes.html, media.html, contact.html
 
-Line 37,42,39, 41: Element ul not allowed as child of element label in this context. (Suppressing further errors from this subtree.)
+Line 37,42,39, 41, 77, 43: Element ul not allowed as child of element label in this context. (Suppressing further errors from this subtree.)
 
 Not sure why. The code seems to work, although admittedly the context is in code not by me.
 
-Some cases where the tags were not closed in the proper order that was identified.
+
+
+Some cases where the tags were not closed in the proper order that was identified. And fixed.
 
 The various pages has also been checked in lighthouse, and been adjusted according to the warnings the various tools provided.
 

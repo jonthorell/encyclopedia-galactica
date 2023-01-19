@@ -10,10 +10,7 @@
         content="isaac asimov, tribute, fan-page, author, foundation, books, timeline, science-fiction">
     <meta name="author" content="Jonas Thorell">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/input.css">
     <link rel="stylesheet" href="assets/css/hamburger.css">
-    <script src="assets/javascript/input.js"></script>
-    <!--javascript borrowed from shaw at codepen-->
     <title>Contact: The Encyclopedia Galactica</title>
 </head>
 
@@ -33,68 +30,22 @@
             </div>
         </header>
 
-        <section>
+        <div>
             <p class="page-title">Contact</p>
-        </section>
-        <section>
-            <label>
-                <input type="checkbox" hidden>
-                <span class="menu"> <span class="hamburger"></span></span>
-                <ul class="main">
-                    <nav id="hide-menu">
-                        <!-- should not be seen when screen > 600 -->
-                        <a href="index.html" aria-label="Return to startpage">About</a>
-                        <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
-                        <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
-                        <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
-                        <a href="media.html" aria-label="Go to media page">Media</a>
-                        <a href="contact.html" aria-label="Go to contact page">Contact</a>
-                        <hr class="hor-row-nav">
-                        <table>
-                            <tr>
-                                <td><a href="https://twitter.com/home?lang=en" target="_blank"
-                                        aria-label="Link to twitter (opens in new tab)"><i
-                                            class="fa-brands fa-twitter"></i></a>
-                                </td>
-                                <td><a href="https://www.facebook.com/" target="_blank"
-                                        aria-label="Link to facebook (opens in new tab)"><i
-                                            class="fa-brands fa-facebook"></i></a></td>
-                                <td><a href="https://www.instagram.com/" target="_blank"
-                                        aria-label="Link to Instagram (opens in new tab)"><i
-                                            class="fa-brands fa-instagram"></i></a></td>
-                            </tr>
-                        </table>
-                    </nav>
-                </ul>
-            </label>
-            <div>
-                <form action="https://formdump.codeinstitute.net/" method="post" class="main center-form">
-                    <fieldset>
-                        <label for="name">Your name:</label>
-                        <input type="text" name="name" id="name" required>
-                        <br><br><label for="email">Your E-mail</label>
-                        <input type="email" name="email" id="email" required>
-                        <br><br><label for="heard-of">Had you heard of Dr Asimov before?</label>
-                        <label for="yes">Yes</label>
-                        <input type="radio" id="yes" name="heard-of" value="yes" required>
-                        <label for="no">No</label>
-                        <input type="radio" id="no" name="heard-of" value="no" required>
-                        <br><br><label for="fb" class="input-sizer">Anything you think could be improved?</label>
-                        <br><textarea oninput="this.parentNode.dataset.value = this.value" placeholder="hi" cols="80"
-                            rows="20" id="fb" name="fb">Enter suggestions for improvement here</textarea>
-                        <br><br><button type="reset" class="black-button"><strong>Reset form</strong></button>
-                        <button type="submit" class="black-button"><strong>Submit!</strong></button>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="sidenav" id="side-nav">
-                <nav>
-                    <a href="index.html" aria-label="Go to start page">About</a>
+        </div>
+
+        <label>
+            <input type="checkbox" hidden>
+            <span class="menu"> <span class="hamburger"></span></span>
+            <ul class="main">
+                <nav id="hide-menu">
+                    <!-- should not be seen when screen > 600 -->
+                    <a href="index.html" aria-label="Return to startpage">About</a>
                     <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
                     <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
                     <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
                     <a href="media.html" aria-label="Go to media page">Media</a>
-                    <a href="contact.html" class="active" aria-label="Go to contact page">Contact</a>
+                    <a href="contact.html" aria-label="Go to contact page">Contact</a>
                     <hr class="hor-row-nav">
                     <table>
                         <tr>
@@ -104,19 +55,64 @@
                             </td>
                             <td><a href="https://www.facebook.com/" target="_blank"
                                     aria-label="Link to facebook (opens in new tab)"><i
-                                        class="fa-brands fa-facebook"></i></a>
-                            </td>
+                                        class="fa-brands fa-facebook"></i></a></td>
                             <td><a href="https://www.instagram.com/" target="_blank"
                                     aria-label="Link to Instagram (opens in new tab)"><i
-                                        class="fa-brands fa-instagram"></i></a>
-                            </td>
+                                        class="fa-brands fa-instagram"></i></a></td>
                         </tr>
                     </table>
                 </nav>
-            </div>
+            </ul>
+        </label>
+    </div>
+    <div>
 
-            <!-- font awsome -->
-            <script src="https://kit.fontawesome.com/9a55b16a72.js" crossorigin="anonymous"></script>
+        <form action="https://formdump.codeinstitute.net/" method="post" class="main center-form">
+            <fieldset>
+                <label for="name">Your name:</label>
+                <input type="text" name="name" id="name" required>
+                <br><br><label for="email">Your E-mail</label>
+                <input type="email" name="email" id="email" required>
+                <br><br>Had you heard of Dr Asimov before?<br>
+                <input type="radio" id="yes" name="heard_before" value="yes" required>
+                <label for="yes">Of course!</label>
+                <input type="radio" id="no" name="heard_before" value="no" required>
+                <label for="no">I'm not a sci-fi geek, you moron!</label>
+                <br><br><label for="fb" class="input-sizer">Anything you think could be improved?</label>
+                <br><textarea oninput="this.parentNode.dataset.value = this.value" placeholder="hi" cols="80" rows="20"
+                    id="fb" name="fb">Enter suggestions for improvement here</textarea>
+                <br><br><button type="reset" class="black-button"><strong>Reset form</strong></button>
+                <button type="submit" class="black-button"><strong>Submit!</strong></button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="sidenav" id="side-nav">
+        <nav>
+            <a href="index.html" aria-label="Go to start page">About</a>
+            <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
+            <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
+            <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
+            <a href="media.html" aria-label="Go to media page">Media</a>
+            <a href="contact.html" class="active" aria-label="Go to contact page">Contact</a>
+            <hr class="hor-row-nav">
+            <table>
+                <tr>
+                    <td><a href="https://twitter.com/home?lang=en" target="_blank"
+                            aria-label="Link to twitter (opens in new tab)"><i class="fa-brands fa-twitter"></i></a>
+                    </td>
+                    <td><a href="https://www.facebook.com/" target="_blank"
+                            aria-label="Link to facebook (opens in new tab)"><i class="fa-brands fa-facebook"></i></a>
+                    </td>
+                    <td><a href="https://www.instagram.com/" target="_blank"
+                            aria-label="Link to Instagram (opens in new tab)"><i class="fa-brands fa-instagram"></i></a>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+    </div>
+
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/9a55b16a72.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -13,12 +13,48 @@
     <link rel="stylesheet" href="assets/css/player.css">
     <link rel="stylesheet" href="assets/css/hamburger.css">
     <title>Media: The Encyclopedia Galactica</title>
+
+    <style>
+        .hytPlayerWrap {
+            display: inline-block;
+            position: relative
+        }
+
+        .hytPlayerWrap.ended::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            cursor: pointer;
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 64px 64px;
+            background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgNTEwIDUxMCI+PHBhdGggZD0iTTI1NSAxMDJWMEwxMjcuNSAxMjcuNSAyNTUgMjU1VjE1M2M4NC4xNSAwIDE1MyA2OC44NSAxNTMgMTUzcy02OC44NSAxNTMtMTUzIDE1My0xNTMtNjguODUtMTUzLTE1M0g1MWMwIDExMi4yIDkxLjggMjA0IDIwNCAyMDRzMjA0LTkxLjggMjA0LTIwNC05MS44LTIwNC0yMDQtMjA0eiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==)
+        }
+
+        .hytPlayerWrap.paused::after {
+            content: "";
+            position: absolute;
+            top: 70px;
+            left: 0;
+            bottom: 50px;
+            right: 0;
+            cursor: pointer;
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 40px 40px;
+            background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEiIHdpZHRoPSIxNzA2LjY2NyIgaGVpZ2h0PSIxNzA2LjY2NyIgdmlld0JveD0iMCAwIDEyODAgMTI4MCI+PHBhdGggZD0iTTE1Ny42MzUgMi45ODRMMTI2MC45NzkgNjQwIDE1Ny42MzUgMTI3Ny4wMTZ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+)
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="main-id">
-
         <!-- dummy for semantic html-->
         <header>
             <div>
@@ -30,10 +66,10 @@
                     (c) The 'It Works On My System Group', Ltd. 2022-2023</h2>
             </div>
         </header>
-        <section>
-            <h1 class="page-title">Some media</h1>
-        </section>
-        <section>
+        <div>
+            <p class="page-title">Some media</p>
+        </div>
+        <div>
             <label>
                 <input type="checkbox" hidden>
                 <span class="menu"> <span class="hamburger"></span></span>
@@ -41,7 +77,7 @@
                 <ul class="main">
                     <nav id="hide-menu">
                         <!-- should not be seen when screen > 600 -->
-                        <a href="index.html" aria-label="Return to startpage"></a>About</a>
+                        <a href="index.html" aria-label="Return to startpage">About</a>
                         <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
                         <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
                         <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
@@ -62,15 +98,11 @@
                                             class="fa-brands fa-instagram"></i></a></td>
                             </tr>
                         </table>
-
                     </nav>
-
                 </ul>
-
             </label>
-        </section>
-        <section>
-
+        </div>
+        <div>
             <p class="main">Some of Dr Asimov's books has been made into movies and/or television shows. Some better
                 than others...and not many considering his enormous productivity.</p><br>
             <div class="main">
@@ -93,46 +125,10 @@
 
             <div class="main">
                 <!-- https://maxl.us/hide-related -->
-                <style>
-                    .hytPlayerWrap {
-                        display: inline-block;
-                        position: relative
-                    }
 
-                    .hytPlayerWrap.ended::after {
-                        content: "";
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        bottom: 0;
-                        right: 0;
-                        cursor: pointer;
-                        background-color: black;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: 64px 64px;
-                        background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgNTEwIDUxMCI+PHBhdGggZD0iTTI1NSAxMDJWMEwxMjcuNSAxMjcuNSAyNTUgMjU1VjE1M2M4NC4xNSAwIDE1MyA2OC44NSAxNTMgMTUzcy02OC44NSAxNTMtMTUzIDE1My0xNTMtNjguODUtMTUzLTE1M0g1MWMwIDExMi4yIDkxLjggMjA0IDIwNCAyMDRzMjA0LTkxLjggMjA0LTIwNC05MS44LTIwNC0yMDQtMjA0eiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==)
-                    }
-
-                    .hytPlayerWrap.paused::after {
-                        content: "";
-                        position: absolute;
-                        top: 70px;
-                        left: 0;
-                        bottom: 50px;
-                        right: 0;
-                        cursor: pointer;
-                        background-color: black;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: 40px 40px;
-                        background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEiIHdpZHRoPSIxNzA2LjY2NyIgaGVpZ2h0PSIxNzA2LjY2NyIgdmlld0JveD0iMCAwIDEyODAgMTI4MCI+PHBhdGggZD0iTTE1Ny42MzUgMi45ODRMMTI2MC45NzkgNjQwIDE1Ny42MzUgMTI3Ny4wMTZ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+)
-                    }
-                </style>
                 <div class="hytPlayerWrapOuter">
-                    <div class="hytPlayerWrap"> <iframe width="640" height="360"
-                            src="https://www.youtube.com/embed/X4QYV5GTz7c?rel=0&enablejsapi=1"
-                            frameborder="0"></iframe></div>
+                    <div class="hytPlayerWrap" id="no-iframe-border"> <iframe width="640" height="360"
+                            src="https://www.youtube.com/embed/X4QYV5GTz7c?rel=0&enablejsapi=1"></iframe></div>
                 </div>
                 <script>
                     "use strict";
@@ -188,7 +184,7 @@
                     at the end of the playback. So, credit to the author!
                 -->
             </div>
-        </section>
+        </div>
         <div class="sidenav" id="side-nav">
             <nav>
                 <a href="index.html" aria-label="Go to start page">About</a>

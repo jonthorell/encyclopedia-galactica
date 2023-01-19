@@ -166,6 +166,7 @@ td {
   padding-left: 200px;
   text-align: center;
   text-decoration: underline;
+  font-size: xx-large;
 }
 
 #main-div {
@@ -351,5 +352,11 @@ a:visited {
 }
 
 #photo-index {
+  /* adds a border to the painting on index.html */
   border: 1px white solid;
+}
+
+#no-iframe-border {
+  /* useed instead of frameborder="0" for the youtube-video to get it compliant */
+  border:none;
 }

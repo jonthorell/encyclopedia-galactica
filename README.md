@@ -7,7 +7,7 @@ The aim is to pay tribute to my favorite author, Isaac Asimov, and his set of no
 
 The site is targeted at "newbies" in the Asimovian universe that wants an overview and/or accssible timeline of the rather long series of books (including books by other authors set in the same universe). There will also be some additonal material such as an intro-page, a bibliography, a contact form, and some information about adapations into other media.
 
-The site is almost entirely written in pure html/css with some javascript in there.
+The site is entirely written in pure html/css.
 
 # Features
 For now the site consists of 6 pages. At the top of the page a banner will always be there to make sure there is no mistaking what site you're on as well as showing copyright information. On the left-hand side there will always be a navigation bar with links to the other parts of the site (and highlighting which you're currently on) as well as links to social media. Both will adapt to different resolutions.
@@ -42,14 +42,13 @@ Layout has been checked on built-in screen of laptop 1920x1080, on the external 
 ## File names and hierarchy
 All file-names are consistently in lower-case and with the appropiate extension (usually .html or .css)
 The html-files are in the root-folder
-The external files are all located in the assets subfolder. In there you have the folders css, javascript, OLD, and pictures.
+The external files are all located in the assets subfolder. In there you have the folders css, OLD, and pictures.
 OLD is not really used. It is there as a "backup" before a hamburger-menu was added so the assessors can see (if they choose to) what the code looked like before I added code that was not my own.
-The javascript folder contains one script, referenced by the contact-page. It was NOT written by me but was added to provide some mean of re-sizing the input form. Details in css-file and under credits.
-The css-folder contains four files.
+The css-folder contains three files.
 1. Style.css is referenced by all html-files
 2. Hamburger.css is also referenced by all html-files.
 3. The reason for this is to separate code by me (style.css) from those by another (hamburger.css). Credits are included in the files.
-4. input.css and player.css are only used in contact.html and media.html respectively. They are also separated from the main style.css for the same reason as #3, and also to avoid potential name-clashes.
+4. player.css is only used in media.html so separated from the main style.css for the same reason as #3, and also to avoid potential name-clashes.
 # Bugs encountered and fixed
 The navigation bar kinda destroyed the layout in lower resolutions. Was fixed by using a hamburger-menu when screensize is 600px and lower. When in those resolutions, the sidenav is hidden from view. NOTE: my knowledge of css is not yet good enough to do that part on my own so the code for that is borrowed and adjusted to suit my site. More details are available in comments in the css-file. Everything regarding css that relates to the hamburger-menu is in the hamburger.css file, to clearly separate my code from someone elses.
 
@@ -63,7 +62,7 @@ The layout was often changing in size which made the site hard to work with. (ho
 
 The timeline-page borders on information overload. Fixed by adding "details" & "summary" tag popouts to provide further information where necessary (and styled differently so the popout text stands out). I also added a special style in the menubar-tables to indicate clearer which part of the page you're on. In the same manner as the sidebar links, i.e. using a active-class.
 
-Two pages (contact and media) uses additional included css-files. That's because those pages uses some code from external "libraries" and how-tos and I wanted to avoid potential name-clashes on pages where those additional classes would not be in use. Not to mention, to make it clear what code was written by me and which was adapted/used from other sources. In the same vein as the hamburger menu that is. So every html-file uses at least two css-files: style.css and hamburger.css. Two uses three. Details included in the respective css-file.
+Two media-page uses an additional included css-file. That's because that pages uses some code from an external source and I wanted to avoid potential name-clashes on pages where those additional classes would not be in use. Not to mention, to make it clear what code was written by me and which was adapted/used from other sources. In the same vein as the hamburger menu that is. So every html-file uses at least two css-files: style.css and hamburger.css. One uses three. Details included in the respective css-file.
 
 The css for "#timeline-table, #timeline-table2, #timeline-table3, #timeline-table4"
 
@@ -104,9 +103,9 @@ Line 37,42,39, 41, 77, 43: Element ul not allowed as child of element label in t
 
 Not sure why. The code seems to work, although admittedly the context is in code not by me.
 
-
-
 Some cases where the tags were not closed in the proper order that was identified. And fixed.
+
+CSS: No errors found
 
 The various pages has also been checked in lighthouse, and been adjusted according to the warnings the various tools provided.
 
@@ -116,9 +115,6 @@ Images found using google-image-search (more precise locations and/or credits ca
 
 Hamburger-menu code:
 https://codepen.io/alvarotrigo/pen/ExwgbZv
-
-Input-resize code:
-https://codepen.io/shshaw
 
 Youtube no-related-videos-and responsiveness:
 https://www.maxlaumeister.com/articles/hide-related-videos-in-youtube-embeds/

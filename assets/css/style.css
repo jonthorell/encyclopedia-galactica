@@ -339,7 +339,7 @@ ul {
   font-size: x-large;
 }
 
-.table-bg-grey {
+.table-bg-blue {
   /* used to set the semi-transparant table on bibliography page */
   border: ridge 1px red;
   background-color: rgba(38, 60, 156, 0.9);

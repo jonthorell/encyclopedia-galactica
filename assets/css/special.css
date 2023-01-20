@@ -1,7 +1,38 @@
 /* this css file is only used to show the column approach in test.html */
 
+* {
+  /* initial style for everything. Will be overridden where need be */
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: yellow;
+}
+
+header h1,
+h2 {
+  /* headers in top bar */
+  color: white;
+  text-align: center;
+}
+
+header h2 {
+  /* decrease the font-size of h2 in header */
+  font-size: xx-small;
+}
+
+#isac-face {
+  /* styles Isacs face in the top-"menu" */
+  width: 50px;
+  height: 50px;
+  float: left;
+  clear: both;
+}
+
 h1 {
-    color: black;
+    color: white;
 }  
   header {
     /* used for the top-heading */
@@ -17,7 +48,7 @@ h1 {
   /* split1, split2, left-column, and right column are used to split the screen horisontally into two columns. To make it easier to maintain responsiveness and the main content more visible */
   
   .split1 {
-    height: 100%;
+    height: 90%;
     width: 10%;
     position: fixed;
     z-index: 1;
@@ -26,12 +57,12 @@ h1 {
   }
   
   .split2 {
-    height: 100%;
+    height: 90%;
     width: 90%;
     position: fixed;
     z-index: 1;
     top: 60px;
-    overflow-x: hidden;
+    overflow:auto;
   }
   
   

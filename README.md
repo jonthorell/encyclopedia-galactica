@@ -56,13 +56,14 @@ The contrast in the bibliography and timeline-pages made it hard to read the tex
 
 The layer mentioned aboved is styled differently on bibliography and timeline. The reason is that the red border used on bibliography suits that page since the two boxes are kinda the opposites of one-another. On the timeline-page though the red border would distract from the flow of the page.
 
-The menu-text at the top of every-page was obscured partially by the top-bar. Fixed by some additional padding (the "About" on the start-page for example). It could have been resolved by removing the text altogether but I found it best to leave it there. That's because the sidebar is removed in lower resolutions so it's not immediately obvious where you are in the page without that piece of text.
+The menu-text at the top of every-page was obscured partially by the top-bar. Fixed by some additional padding (the "About" on the start-page for example). It could have been resolved by removing the text altogether but I found it best to leave it there. That's because the sidebar is removed in lower resolutions so it's not immediately obvious where you are on the site without that piece of text.
 
-The layout was often changing in size which made the site hard to work with. (hopefully) fixed by adding a div that encompasses the whole page and then applies a width: of 100% to its class.
+The layout was often changing in size which made the site hard to work with. Fixed by adding a div that encompasses the whole page and then applies a width: of 100% to its class. That and additional divs and classes to divide the page
+into two columns with some set width and heights in % there as well as some additonal styling for img-elements so they sclae better. The test.html shows the the layout without any distracting extra material. The new column-approach has been added to index.html, bibliography.html and the rest will follow.
 
 The timeline-page borders on information overload. Fixed by adding "details" & "summary" tag popouts to provide further information where necessary (and styled differently so the popout text stands out). I also added a special style in the menubar-tables to indicate clearer which part of the page you're on. In the same manner as the sidebar links, i.e. using a active-class.
 
-Two media-page uses an additional included css-file. That's because that pages uses some code from an external source and I wanted to avoid potential name-clashes on pages where those additional classes would not be in use. Not to mention, to make it clear what code was written by me and which was adapted/used from other sources. In the same vein as the hamburger menu that is. So every html-file uses at least two css-files: style.css and hamburger.css. One uses three. Details included in the respective css-file.
+The media-page uses an additional included css-file. That's because that pages uses some code from an external source and I wanted to avoid potential name-clashes on pages where those additional classes would not be in use. Not to mention, to make it clear what code was written by me and which was adapted/used from other sources. In the same vein as the hamburger menu that is. So every html-file uses at least two css-files: style.css and hamburger.css. One uses three. Details included in the respective css-file.
 
 The css for "#timeline-table, #timeline-table2, #timeline-table3, #timeline-table4"
 
@@ -72,7 +73,7 @@ The theming for the hamburger-menu looked wrong when page has more info than the
 
 The title-text flows out of the title-bar at lower resolutions. Fixed by some media-queries and altering the font-size of h1. Might be a better way of doing it, but probably involves some javascripting. It seems to work though. The h2 suffered from a similar thing and a media-query that hides it when the resolution is less than 800px wide fixes the problem there.
 
-When resizing the browser-window, images can end up partially covered by the side-bar. An additional div fixed that problem.
+When resizing the browser-window, images can end up partially covered by the side-bar. An additional div plus removing the sidebar and the left-hand column using diplay:none fixed that problem.
 
 Lighthouse warned about missing width= and height= values in img src. Added.
 
@@ -90,8 +91,6 @@ Timeline page
 The main-table with the events is not resized the same way as the menu-tables when the resolution changes. So the page can end up looking like above, which is not how it is supposed to look. The two tables should always
 be equal in size horizontally. This was caused by the tags not being closed in the proper order as found by the validator.
 When tags had been closed properly the tables aligned correctly horizontally, although instead being pushed underneath the sidenav. Probably due to the wrong classes.
-
-Some scaling problems so the main part is kinda hidden in lower resolutions.
 
 ## Validation
 

@@ -18,25 +18,25 @@ For additonal clarity for newbies, "pop-outs" has been enabled so you get at ">"
 
 ## About
 Provides some introductory text and background to the purpose of the site.
-![about-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/about.PNG?raw=true)
+![about-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/about.PNG)
 ## Bibliography
 Provides the canonical set of novels that Isaac Asimov himself wrote as a part of this future
 timeline. This provides a set of must-read novels to make sense of the timeline.
-![bibliography-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/bibiliography.PNG?raw=true)
+![bibliography-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/bibiliography.PNG?raw=true)
 ## Timeline
 A more-or-less complete timeline. It can be expanded quite a lot, but the general timeline is there. This is the meat of the project
 and is what gives both casual and long-time fans of the series a very thorough explantion of the major events of the future history.
 
-![timeline-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/timeline.PNG?raw=true)
+![timeline-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/timeline.PNG?raw=true)
 ## Quotes
 A list of some more or less, in my view, funny quotes from Dr Asimov. This is basically to just add some humor to the site. See also the entry below.
-![quotes-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/quotes.PNG?raw=true)
+![quotes-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/quotes.PNG?raw=true)
 ## Media
 Some information on other media Asimov's novels has been converted into. This, together with the quote-page, was added to the project to make the project seem like a complete website and not sort-of disjointed.
-![media-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/media.png?raw=true)
+![media-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/media.png?raw=true)
 ## Contact
 Provides a contact-form if the user wants to get in touch with the site-owner with feedback. It doesn't really send anything anywhere, but a website with no form of user-interaction is almost no website at all.
-![contact-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/contact.PNG?raw=true)
+![contact-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/contact.PNG?raw=true)
 ## Testing
 Layout has been checked on built-in screen of laptop 1920x1080, on the external display (2560x1440) in Chrome and Edge as well as some "simulated" sizes using devtools. Some problems did not show up on the external display (or the simulated sizes for that matter) but when used on the built-in screen the problems showed up. They were rather superficial in nature and could easily be resolved. Some by enclosing it in an additional div-tag properly styled by css, some because the responsiveness was broken because of syntax errors and the like. Details follows in the list of bugs encountered.
 ## File names and hierarchy
@@ -86,7 +86,7 @@ See id #no-iframe-border in style.css.
 
 Timeline page
 
-![error-resize](https://github.com/jonthorell/encyclopedia-galactica/blob/main/readme-files/resize-error.PNG?raw=true)
+![error-resize](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/resize-error.PNG?raw=true)
 
 The main-table with the events is not resized the same way as the menu-tables when the resolution changes. So the page can end up looking like above, which is not how it is supposed to look. The two tables should always
 be equal in size horizontally. This was caused by the tags not being closed in the proper order as found by the validator.

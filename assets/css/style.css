@@ -45,7 +45,7 @@ body {
   background-image: url("../pictures/starfield.jpg");
   /* in case background can not be loaded, set a background color */
   background-color: black;
-  overflow-x: hidden; 
+  /* overflow-x: hidden;  */
 }
 
 .mylink {
@@ -109,7 +109,7 @@ header h2 {
   position: fixed;
   z-index: 1;
   top: 50px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 

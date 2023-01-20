@@ -81,7 +81,7 @@ header h2 {
   height: 100%;
 }
 
-/* split1, split2, left-column, and right column are used to split the screen horisontally into two columns. To make it easier to maintain responsiveness and the main content more visible */
+/* split1, split2, left-column, and right-column are used to split the screen horisontally into two columns. To make it easier to maintain responsiveness and the main content more visible */
 
 .split1 {
   height: 100%;

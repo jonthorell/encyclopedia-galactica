@@ -1,0 +1,58 @@
+/* this css file is only used to show the column approach in test.html */
+
+h1 {
+    color: black;
+}  
+  header {
+    /* used for the top-heading */
+    background-color: cadetblue;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+  }
+
+  /* split1, split2, left-column, and right column are used to split the screen horisontally into two columns. To make it easier to maintain responsiveness and the main content more visible */
+  
+  .split1 {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    overflow-x: hidden;
+  }
+  
+  .split2 {
+    height: 100%;
+    width: 90%;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    overflow-x: hidden;
+  }
+  
+  
+  .left-column {
+    left: 0;
+    background-color: red;
+  }
+  
+  .right-column {
+    right: 0;
+    background-color: yellow;
+  }
+
+  .page-title {
+    /* styles the page-title (i.e. about) */
+    color: aqua;
+    padding-top: 60px;
+    padding-left: 200px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: xx-large;
+  }
+  
+  

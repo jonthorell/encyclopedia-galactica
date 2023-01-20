@@ -11,13 +11,11 @@
     <meta name="author" content="Jonas Thorell">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/hamburger.css">
-    <title>About: The Encyclopedia Galactica</title>
+    <title>Main: The Encyclopedia Galactica</title>
 </head>
 
 <body>
-
     <div id="main-id">
-        <!-- dummy for semantic html-->
         <header>
             <a href="index.html" aria-label="Return to startpage"><img src="assets/pictures/azimov.png"
                     alt="Isaac Asimov" id="isac-face" width="100" height="118"></a>
@@ -27,139 +25,135 @@
                 The 'It Works On My System Group', Ltd. 2022-2023</h2>
 
         </header>
-        <div class="main">
+
+        <div class="split1 left-column">
+            <div id="side-nav" class="sidenav">
+                <!--Should be hidden when screen size is less than 600-->
+                <nav>
+                    <a href="index.html" class="active" aria-label="Go to start page">About</a>
+                    <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
+                    <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
+                    <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
+                    <a href="media.html" aria-label="Go to media page">Media</a>
+                    <a href="contact.html" aria-label="Go to contact page">Contact</a>
+                    <hr class="hor-row-nav">
+                    <table>
+                        <tr>
+                            <td><a href="https://twitter.com/home?lang=en" target="_blank"
+                                    aria-label="Link to twitter (opens in new tab)"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                            </td>
+                            <td><a href="https://www.facebook.com/" target="_blank"
+                                    aria-label="Link to facebook (opens in new tab)"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                            </td>
+                            <td><a href="https://www.instagram.com/" target="_blank"
+                                    aria-label="Link to Instagram (opens in new tab)"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </td>
+                        </tr>
+                    </table>
+                </nav>
+            </div>
+        </div>
+        <div class="split2 right-column">
             <p class="page-title">About</p>
+            <label>
+                <input type="checkbox" hidden>
+                <span class="menu"> <span class="hamburger"></span></span>
 
-            <div class="main">
-                <label>
-                    <input type="checkbox" hidden>
-                    <span class="menu"> <span class="hamburger"></span></span>
-                    <ul>
-                        <nav id="hide-menu">
-                            <!-- should not be seen when screen > 600 -->
-                            <a href="index.html" aria-label="Return to startpage">About</a>
-                            <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
-                            <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
-                            <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
-                            <a href="media.html" aria-label="Go to media page">Media</a>
-                            <a href="contact.html" aria-label="Go to contact page">Contact</a>
-                            <hr class="hor-row-nav">
-                            <table>
-                                <tr>
-                                    <td><a href="https://twitter.com/home?lang=en" target="_blank"
-                                            aria-label="Link to twitter (opens in new tab)"><i
-                                                class="fa-brands fa-twitter"></i></a>
-                                    </td>
-                                    <td><a href="https://www.facebook.com/" target="_blank"
-                                            aria-label="Link to facebook (opens in new tab)"><i
-                                                class="fa-brands fa-facebook"></i></a></td>
-                                    <td><a href="https://www.instagram.com/" target="_blank"
-                                            aria-label="Link to Instagram (opens in new tab)"><i
-                                                class="fa-brands fa-instagram"></i></a></td>
-                                </tr>
-                                </tr>
-                            </table>
-                        </nav>
-                    </ul>
-                </label>
-            </div>
-
-            <div>
-                <table id="main-table" class="table-center">
-                    <tr>
-                        <td><br><br><img src="assets/pictures/who-is-isaac-asimov.jpg" id="photo-index"
-                                alt="Drawing of Isaac Asimov" width="700" height="500"></td>
-                    </tr>
-                    <tr>
-                        <tD><br><br>Perhaps the most well-respected and largest series in science fiction, Isaac
-                            Asimov's
-                            Robot-Empire-Foundation Series encompasses dozens of books and tens of thousands of years of
-                            future history.
-                            <br><br>Due to the enormous timescales (for human standards), there are many characters to
-                            keep
-                            track of. Most of them are only part of the narrative for a limited amount of time so the
-                            site
-                            will not go into details of them.
-                            <br><br>The most important ones are
-                            <a href="https://en.wikipedia.org/wiki/Elijah_Baley" target="_blank"
-                                aria-label="Link to wikipedia article about Elijah Baley (opens in new tab)">Elijah
-                                Bailey</a>,
-                            <a href="https://en.wikipedia.org/wiki/R._Daneel_Olivaw" target="_blank"
-                                aria-label="Link to wikipedia article about Daneel Olivaw (opens in new tab)">R. Daneel
-                                Olivaw</a>,
-                            <a href="https://en.wikipedia.org/wiki/List_of_Robot_series_characters#R._Giskard_Reventlov"
-                                target="_blank"
-                                aria-label="Link to wikipedia article about Giskard Reventlov (opens in new tab)">R.
-                                Giskard
-                                Reventlov</a> (R stands for Robot), and
-                            <a href="https://en.wikipedia.org/wiki/Hari_Seldon" target="_blank"
-                                aria-label="Link to wikipedia article about Hari Seldon (opens in new tab)">Hari
-                                Seldon</a>
-                            <br><br>Maybe one can consider "Three laws of Robotics" as a character on its own since it
-                            is so
-                            vital to the entire series. Most likely what Asimov is most famous for.
-                            <br><br>
-                            <p class="robotics">1: A robot may not injure a human being or, through inaction, allow a
-                                human
-                                being to come to harm;</p>
-                            <p class="robotics">2: A robot must obey the orders given it by human beings except where
-                                such
-                                orders would conflict with the First Law;</p>
-                            <p class="robotics">3: A robot must protect its own existence as long as such protection
-                                does
-                                not conflict with the First or Second Law;</p>
-                            <p class="robotics">The Zeroth Law: A robot may not harm humanity, or, by inaction, allow
-                                humanity to come to harm.</p>
-                            <br><br>This site is essentially a homeage to both the series itself and to Dr Asimov. Most
-                            certainly the author I have read the most of and that I have the utmost of respect for.
-                            <br><br>The choice was between him and J.R.R. Tolkien, even though they couldn't be more
-                            different in what they chose to write about on superficial level.
-                            <br><br>If you dig further in, they are similar in many ways. Partially by how complex their
-                            respective fictional universe is, but more importantly: their faith that humanity can and
-                            will
-                            prevail even when disasters try to tell us otherwise.
-                            <br><br>In the end, I chose Asimov over Tolkien here since I favor the scientific (or
-                            psuedo-scientific in some cases) of science fiction over the magical/divine aspects. But I
-                            digress.
-                            <br><br>I hope the site do the chosen subject justice!
-                        </td>
-                </table>
-            </div>
+                <ul>
+                    <nav id="hide-menu">
+                        <!-- should not be seen when screen > 600 -->
+                        <a href="index.html" aria-label="Return to startpage">About</a>
+                        <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
+                        <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
+                        <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
+                        <a href="media.html" aria-label="Go to media page">Media</a>
+                        <a href="contact.html" aria-label="Go to contact page">Contact</a>
+                        <hr class="hor-row-nav">
+                        <table>
+                            <tr>
+                                <td><a href="https://twitter.com/home?lang=en" target="_blank"
+                                        aria-label="Link to twitter (opens in new tab)"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                </td>
+                                <td><a href="https://www.facebook.com/" target="_blank"
+                                        aria-label="Link to facebook (opens in new tab)"><i
+                                            class="fa-brands fa-facebook"></i></a></td>
+                                <td><a href="https://www.instagram.com/" target="_blank"
+                                        aria-label="Link to Instagram (opens in new tab)"><i
+                                            class="fa-brands fa-instagram"></i></a></td>
+                            </tr>
+                        </table>
+                    </nav>
+                </ul>
+            </label>
+            <table class="table-center">
+                <tr>
+                    <td><br><br><img src="assets/pictures/who-is-isaac-asimov.jpg" id="photo-index"
+                            alt="Drawing of Isaac Asimov" width="700" height="500"></td>
+                </tr>
+                <tr>
+                    <tD><br><br>Perhaps the most well-respected and largest series in science fiction, Isaac
+                        Asimov's
+                        Robot-Empire-Foundation Series encompasses dozens of books and tens of thousands of years of
+                        future history.
+                        <br><br>Due to the enormous timescales (for human standards), there are many characters to
+                        keep
+                        track of. Most of them are only part of the narrative for a limited amount of time so the
+                        site
+                        will not go into details of them.
+                        <br><br>The most important ones are
+                        <a href="https://en.wikipedia.org/wiki/Elijah_Baley" target="_blank"
+                            aria-label="Link to wikipedia article about Elijah Baley (opens in new tab)">Elijah
+                            Bailey</a>,
+                        <a href="https://en.wikipedia.org/wiki/R._Daneel_Olivaw" target="_blank"
+                            aria-label="Link to wikipedia article about Daneel Olivaw (opens in new tab)">R. Daneel
+                            Olivaw</a>,
+                        <a href="https://en.wikipedia.org/wiki/List_of_Robot_series_characters#R._Giskard_Reventlov"
+                            target="_blank"
+                            aria-label="Link to wikipedia article about Giskard Reventlov (opens in new tab)">R.
+                            Giskard
+                            Reventlov</a> (R stands for Robot), and
+                        <a href="https://en.wikipedia.org/wiki/Hari_Seldon" target="_blank"
+                            aria-label="Link to wikipedia article about Hari Seldon (opens in new tab)">Hari
+                            Seldon</a>
+                        <br><br>Maybe one can consider "Three laws of Robotics" as a character on its own since it
+                        is so
+                        vital to the entire series. Most likely what Asimov is most famous for.
+                        <br><br>
+                        <p class="robotics">1: A robot may not injure a human being or, through inaction, allow a
+                            human
+                            being to come to harm;</p>
+                        <p class="robotics">2: A robot must obey the orders given it by human beings except where
+                            such
+                            orders would conflict with the First Law;</p>
+                        <p class="robotics">3: A robot must protect its own existence as long as such protection
+                            does
+                            not conflict with the First or Second Law;</p>
+                        <p class="robotics">The Zeroth Law: A robot may not harm humanity, or, by inaction, allow
+                            humanity to come to harm.</p>
+                        <br><br>This site is essentially a homeage to both the series itself and to Dr Asimov. Most
+                        certainly the author I have read the most of and that I have the utmost of respect for.
+                        <br><br>The choice was between him and J.R.R. Tolkien, even though they couldn't be more
+                        different in what they chose to write about on superficial level.
+                        <br><br>If you dig further in, they are similar in many ways. Partially by how complex their
+                        respective fictional universe is, but more importantly: their faith that humanity can and
+                        will
+                        prevail even when disasters try to tell us otherwise.
+                        <br><br>In the end, I chose Asimov over Tolkien here since I favor the scientific (or
+                        psuedo-scientific in some cases) of science fiction over the magical/divine aspects. But I
+                        digress.
+                        <br><br>I hope the site do the chosen subject justice!
+                    </td>
+            </table>
         </div>
-
-        <div class="sidenav" id="side-nav">
-            <!--Should be hidden when screen size is less than 600-->
-            <nav>
-                <a href="index.html" class="active" aria-label="Go to start page">About</a>
-                <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
-                <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
-                <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
-                <a href="media.html" aria-label="Go to media page">Media</a>
-                <a href="contact.html" aria-label="Go to contact page">Contact</a>
-                <hr class="hor-row-nav">
-                <table>
-                    <tr>
-                        <td><a href="https://twitter.com/home?lang=en" target="_blank"
-                                aria-label="Link to twitter (opens in new tab)"><i class="fa-brands fa-twitter"></i></a>
-                        </td>
-                        <td><a href="https://www.facebook.com/" target="_blank"
-                                aria-label="Link to facebook (opens in new tab)"><i
-                                    class="fa-brands fa-facebook"></i></a>
-                        </td>
-                        <td><a href="https://www.instagram.com/" target="_blank"
-                                aria-label="Link to Instagram (opens in new tab)"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                        </td>
-                    </tr>
-                </table>
-
-            </nav>
-        </div>
-
-        <!-- font awsome -->
-
-        <script src="https://kit.fontawesome.com/9a55b16a72.js" crossorigin="anonymous"></script>
     </div>
+
+    <!-- font awsome -->
+
+    <script src="https://kit.fontawesome.com/9a55b16a72.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

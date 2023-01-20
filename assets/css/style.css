@@ -43,16 +43,9 @@ header {
 
 body {
   background-image: url("../pictures/starfield.jpg");
-  /*in case background can not be loaded, set a background color */
+  /* in case background can not be loaded, set a background color */
   background-color: black;
-  overflow-x: hidden;
-}
-
-.main {
-  color: wheat;
-  margin-left: 200px;
-  /* Same as the width of the sidebar */
-  padding: 0px 200px;
+  overflow-x: hidden; 
 }
 
 header h1 {
@@ -82,22 +75,58 @@ header h2 {
   clear: both;
 }
 
+#main-div {
+  /*centers the main div that encommpasses the whole page */
+  width: 100%;
+  height: 100%;
+}
+
+/* split1, split2, left-column, and right column are used to split the screen horisontally into two columns. To make it easier to maintain responsiveness and the main content more visible */
+
+.split1 {
+  height: 100%;
+  width: 10%;
+  position: fixed;
+  z-index: 1;
+  top: 50px;
+  overflow-x: hidden;
+}
+
+.split2 {
+  height: 100%;
+  width: 90%;
+  position: fixed;
+  z-index: 1;
+  top: 50px;
+  overflow-x: hidden;
+}
+
+
+.left-column {
+  left: 0;
+}
+
+.right-column {
+  right: 0;
+}
+
+.main {
+  color: wheat;
+  position: relative;
+  margin-left: 200px;
+  /* Same as the width of the sidebar */
+  padding: 0px 200px;
+}
+
 .sidenav {
   /* styles the sidenav */
   height: auto;
-  width: 200px;
-  /*position: absolute;*/
+  width:auto;
   position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Stay on top */
   top: 60px;
-  /* Stay at the top */
   left: 0;
   overflow-x: hidden;
-  /* Disable horizontal scroll */
   padding-top: 0px;
-  /* Place content 60px from the top */
   background-image: url("../pictures/starfield.jpg");
   /*in case background can not be loaded, set a background color */
   background-color: black;

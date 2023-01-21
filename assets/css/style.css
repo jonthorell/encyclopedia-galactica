@@ -231,6 +231,11 @@ fieldset {
   border: 2px;
 }
 
+fieldset label {
+  font-size: larger;
+  color: wheat;
+}
+
 legend {
   background-color: gray;
   color: white;
@@ -260,6 +265,23 @@ input {
 .black-button {
   background-color: black;
   color: white;
+}
+
+.return-button {
+  border: 2px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 36px;
+  margin: 4px 2px;
+  background-color: black;
+  background-color: black;
+  color: white;
+}
+
+.return-button:hover {
+  color:aqua;
 }
 
 .black-button:hover {

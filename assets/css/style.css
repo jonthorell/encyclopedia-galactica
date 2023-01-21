@@ -96,7 +96,7 @@ header h2 {
 
 .split1 {
   height: 90%;
-  width: 10%;
+  width: 20%;
   position: fixed;
   z-index: 1;
   top: 50px;
@@ -105,7 +105,7 @@ header h2 {
 
 .split2 {
   height: 90%;
-  width: 90%;
+  width: 80%;
   position: fixed;
   z-index: 1;
   top: 50px;

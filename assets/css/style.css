@@ -292,12 +292,16 @@ caption {
   font-size: larger;
 }
 
-ul {
+ul li {
   /* styles the list on quotes page. <ul> is only used there. */
   color: wheat;
-  list-style-type: "→";
+  font-style: italic;
   font-size: larger;
-}
+  line-height: 1.5;
+  list-style-type: circle;
+  /* list-style-type: "→"; 
+  */
+} 
 
 
 .ol-roman {

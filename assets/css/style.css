@@ -295,12 +295,11 @@ caption {
 ul li {
   /* styles the list on quotes page. <ul> is only used there. */
   color: wheat;
-  font-style: italic;
   font-size: larger;
   line-height: 1.5;
-  list-style-type: circle;
-  /* list-style-type: "→"; 
-  */
+  margin-left: 20px;
+  padding: 0px 20px;
+  list-style-type: "→"; 
 } 
 
 

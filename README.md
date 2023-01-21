@@ -12,14 +12,22 @@ The site is entirely written in pure html/css, and can be seen live
 ![mockup-picture](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/multi-website-mockup.png?raw=true)
 
 # Features
-For now the site consists of 6 pages. At the top of the page a banner will always be there to make sure there is no mistaking what site you're on as well as showing copyright information. On the left-hand side there will always be a navigation bar with links to the other parts of the site (and highlighting which you're currently on) as well as links to social media. Both will adapt to different resolutions.
+## Site-wide
+* The site is divided in three distinct areas. A top-bar with the title and a mock-date of when the encyclopedia was published and some copyright information.
+The main part of the screen is divided into two columns. The left-hand column is a navigation-bar for the site with some links to social media.
+The current page being viewed is highlighted.
 
-"Always" on the left-hand side is not quite true. When the screen-resolution is lower than 600px wide, it gets replaced by a hamburger-menu.
+![navbar](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/navbar.PNG?raw=true)
 
-For additonal clarity for newbies, "pop-outs" has been enabled so you get at ">" where an additonal comment may be necessary.
+* Every link, site local as well as external, anywhere on the site are aria-label enabled to assist screenreaders. 
 
-## About
-Provides some introductory text and background to the purpose of the site.
+* The site is also fully responsive so can easily be used on any
+device. To make it easier for devices with lower resolutions, the sidebar is hidden from view and replaced with a hamburger menu when the horizontal resolution drops below 800 pixels.
+
+* Favicon: to make the tab the site is open in easily distinguished, a favicon has been implemented. To keep with the science-fiction and space-theme, a star seemed suitable.
+
+## About (or startpage)
+Provides some introductory text and background to the purpose of the site to make it immediately obvious what the site is all about.
 ![about-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/about.PNG?raw=true)
 ## Bibliography
 Provides the canonical set of novels that Isaac Asimov himself wrote as a part of this future
@@ -38,7 +46,11 @@ Some information on other media Asimov's novels has been converted into. This, t
 ![media-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/media.png?raw=true)
 ## Contact
 Provides a contact-form if the user wants to get in touch with the site-owner with feedback. It doesn't really send anything anywhere, but a website with no form of user-interaction is almost no website at all.
+The data entered is validated for errors (such as an empty name field), and sends the user to a thank-you page. It has been validated that the correct data is sent using a test-form, but for now it is better to
+just use a basic thank-you page themed the same way as the rest of the site.
 ![contact-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/contact.PNG?raw=true)
+
+![thank-you page]()
 ## Testing
 Layout has been checked on built-in screen of laptop 1920x1080, on the external display (2560x1440) in Chrome and Edge as well as some "simulated" sizes using devtools. Some problems did not show up on the external display (or the simulated sizes for that matter) but when used on the built-in screen the problems showed up. They were rather superficial in nature and could easily be resolved. Some by enclosing it in an additional div-tag properly styled by css, some because the responsiveness was broken because of syntax errors and the like. Details follows in the list of bugs encountered.
 ## File names and hierarchy

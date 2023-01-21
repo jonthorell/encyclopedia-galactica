@@ -162,11 +162,36 @@ When tags had been closed properly the tables aligned correctly horizontally, al
 Every html-page has been validated as has the css-files. 
 
 * HTML. All files were validated using [v3 validator](https://validator.w3.org/)
-All together 7 files, 6 being in use on the site and one test file.
+All together 8 files, 7 being in use on the site and one test file.
 
 ![index.html](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/html-validation/html-index-result.PNG?raw=true)
 ![bibliography.html](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/html-validation/html-bibliography-result.PNG?raw=true)
-![timeline]()
+![timeline.html](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/html-validation/html-timeline-result.PNG?raw=true)
+![quotes.html](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/html-validation/html-quotes-result.PNG?raw=true)
+![media.html](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/html-validation/html-media-result.PNG?raw=true)
+![contact.html](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/html-validation/html-contact-result.PNG?raw=true)
+![thankyou.html](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/html-validation/html-thankyou-result.PNG?raw=true)
+
+A few notes on those images. As can be seen, it is the same error in all of them. The "offending" code comes from the hamburger-menu code I borrowed and adapted for this site.
+Unfortunately, I did not notice the problem early enough or I might have been able to find a solution to the issue. As it is, there are two options:
+* Remove the offending code. Which, unfortunately, will make the responsiveness of the site to suffer.
+* Leave it as-is for now.
+
+The code works, even though with an error from the validator, so I opted to leave it for now. Not optimal so something to add to the to-do list.
+
+Compare it with index2.html. The same as index.html except that the hamburger-menu code has been removed.
+
+![index2.html](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/html-validation/html-index2-result.PNG?raw=true)
+
+The other note is: as can be seen by the screenshots, I have uploaded the html-file into the validator.
+
+The reason for that is: the online-checker with URL is not trustworthy.
+
+My site has been deployed to github pages. BUT when I tried to use a URL from there to validate against I got a lot more errors regarding classes and mismatched tags for things I have not written or even seen.
+It seems the URL input functionality of the validator drags in additonal css/html files that are unrelated to my project.
+
+See the following screenshot:
+
 
 
 index.html, bibliography.html, timeline.html, quotes.html, media.html, contact.html

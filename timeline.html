@@ -15,635 +15,612 @@
 </head>
 
 <body>
+    <header>
+        <a href="index.html" aria-label="Return to startpage"><img src="assets/pictures/azimov.png" alt="Isaac Asimov"
+                id="isac-face" width="100" height="118"></a>
+        <h1 id="encyc-header">the encyclopedia galactica</h1>
+        <h2 id="published">(as published by the Encyclopedia Galactica Publishing Company, 116th Edition,
+            published 1020 F.E)
+            (c)
+            The 'It Works On My System Group', Ltd. 2022-2023</h2>
+    </header>
     <div id="main-id">
-        <!-- dummy for semantic html-->
-        <header>
-            <div>
-                <a href="index.html" aria-label="Return to startpage"><img src="assets/pictures/azimov.png"
-                        alt="Isaac Asimov" id="isac-face" width="100" height="118"></a>
-                <h1 id="encyc-header">the encyclopedia galactica</h1>
-                <h2 id="published">(as published by the Encyclopedia Galactica Publishing Company, 116th Edition,
-                    published 1020 F.E)
-                    (c)
-                    The 'It Works On My System Group', Ltd. 2022-2023</h2>
+        <div id="left-column-id" class="split1 left-column">
+            <div id="side-nav" class="sidenav">
+                <!--Should be hidden when screen size is less than 600-->
+                <nav>
+                    <a href="index.html" aria-label="Go to start page">About</a>
+                    <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
+                    <a href="timeline.html" class="active" aria-label="Go to timeline page">Timeline</a>
+                    <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
+                    <a href="media.html" aria-label="Go to media page">Media</a>
+                    <a href="contact.html" aria-label="Go to contact page">Contact</a>
+                    <hr class="hor-row-nav">
+                    <table>
+                        <tr>
+                            <td><a href="https://twitter.com/home?lang=en" target="_blank"
+                                    aria-label="Link to twitter (opens in new tab)"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                            </td>
+                            <td><a href="https://www.facebook.com/" target="_blank"
+                                    aria-label="Link to facebook (opens in new tab)"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                            </td>
+                            <td><a href="https://www.instagram.com/" target="_blank"
+                                    aria-label="Link to Instagram (opens in new tab)"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </td>
+                        </tr>
+                    </table>
+                </nav>
             </div>
-        </header>
-        <div>
-            <p class="page-title">Timeline</p>
         </div>
-        <div>
-            <label>
-                <input type="checkbox" hidden>
-                <span class="menu"> <span class="hamburger"></span></span>
+            <div class="split2 right-column">
+                <p class="page-title">About</p>
+                <img src="assets/pictures/empire-logo-small.png" alt="The empire's logotype" class="center-image-horiz">
+                The timeline of this fictional universe can basically be divided into four eras (bear in
+                mind
+                that the timeline is rather condensed. A lot more could be added). Some of the years have
+                been
+                converted between C.E (current era), G.E (Galactic Era), and F.E (Foundation Era) to give a
+                better understanding
+                of the time-scale. Unfortunately, it can only be an approximation infered from the various
+                texts
+                since a complete timeline with definite years has never been published. Everything between
+                [...] references a book-title.
 
-                <ul class="main">
-                    <nav id="hide-menu">
-                        <!-- should not be seen when screen > 600 -->
-                        <a href="index.html" aria-label="Return to startpage">About</a>
-                        <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
-                        <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
-                        <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
-                        <a href="media.html" aria-label="Go to media page">Media</a>
-                        <a href="contact.html" aria-label="Go to contact page">Contact</a>
-                        <hr class="hor-row-nav">
-                        <table>
-                            <tr>
-                                <td><a href="https://twitter.com/home?lang=en" target="_blank"
-                                        aria-label="Link to twitter (opens in new tab)"><i
-                                            class="fa-brands fa-twitter"></i></a>
-                                </td>
-                                <td><a href="https://www.facebook.com/" target="_blank"
-                                        aria-label="Link to facebook (opens in new tab)"><i
-                                            class="fa-brands fa-facebook"></i></a></td>
-                                <td><a href="https://www.instagram.com/" target="_blank"
-                                        aria-label="Link to Instagram (opens in new tab)"><i
-                                            class="fa-brands fa-instagram"></i></a></td>
-                            </tr>
-                        </table>
-                    </nav>
-                </ul>
-            </label>
-        </div>
-        <div><br>
-            <div class="main">
-                <table class="table-center">
+                <br>
+                <p class="emp-red">Pay attentention to the <i class="fa-solid fa-caret-right"></i> icon! It
+                    provides further information.
+                    <br>Canon: <i class="fa-solid fa-thumbs-up"></i>
+                    <br>Not canon: <i class="fa-solid fa-thumbs-down"></i>
+                    <br>Both: <i class="fa-solid fa-up-down"></i></p>
+                <br><br>
+                <hr class="hor-row-nav">
+
+                <table class="table-center table-bg-blue-no-border links-table">
                     <tr>
-                        <td><img src="assets/pictures/empire-logo-small.png" alt="The empire's logotype" width="400"
-                                height="358"></td>
+                        <td>
+                            <details>
+                                <summary><a href="#spacers" class="active-timeline">Robots and spacers era</a></summary>
+                                <p class="summary-bg">The spacers were a race of long-lived humans that had settled 50
+                                    planets and despised their
+                                    shortlived relatives on earth.</p>
+                            </details>
+                        </td>
+                        <td>
+                            <details>
+                                <summary><a href="#rise">Rise of galactic empire era</a></summary>
+                                <p class="summary-bg">'Rise of' is up to the point when the first Emperor Frankenn I is
+                                    coronated for the galaxy-wide empire. The "smaller" Trantorian empire before that is
+                                    still considered to be in the 'rise-of' era</p>
+                            </details>
+                        </td>
+                        <td>
+                            <details>
+                                <summary><a href="#empire">Galactic Empire era</a></summary>
+                                <p class="summary-bg">At its peak, the Empire consisted of more than 25 million
+                                    inhabited worlds spread around the galaxy, with an average of 1 billion people per
+                                    planet.</p>
+                            </details>
+                        </td>
+                        <td>
+                            <details>
+                                <summary><a href="#foundation">Foundation era</a></summary>
+                                <p class="summary-bg">While smaller in size than the Empire, it was more powerful and
+                                    maybe more stable.</p>
+                            </details>
+                        </td>
                     </tr>
                     <tr>
-                        <td>The timeline of this fictional universe can basically be divided into four eras (bear in
-                            mind
-                            that the timeline is rather condensed. A lot more could be added). Some of the years have
-                            been
-                            converted between C.E (current era), G.E (Galactic Era), and F.E (Foundation Era) to give a
-                            better understanding
-                            of the time-scale. Unfortunately, it can only be an approximation infered from the various
-                            texts
-                            since a complete timeline with definite years has never been published. Everything between
-                            [...] references a book-title.
-
-                            <br>
-                            <p class="emp-red">Pay attentention to the <i class="fa-solid fa-caret-right"></i> icon! It
-                                provides further information.
-                                <br>Canon: <i class="fa-solid fa-thumbs-up"></i>
-                                <br>Not canon: <i class="fa-solid fa-thumbs-down"></i>
-                                <br>Both: <i class="fa-solid fa-up-down"></i></p>
-
-
+                        <td>Approximately between 1982 C.E and 6000 C.E</td>
+                        <td>Approximately between 6000 C.E and 13,000 C.E</td>
+                        <td>Approximatekly between 13,000 C.E. and 25,000 C.E</td>
+                        <td>Approximately between 25,000 C.E and 25,520 C.E (and counting. No end-date specified).</td>
+                    </tr>
+                </table>
+                <br>
+                <table id="timeline-table" class="table-bg-blue-no-border links-table">
+                    <tr>
+                        <th>Canon</th>
+                        <th>Year</th>
+                        <th>Era</th>
+                        <th>Event</th>
+                    </tr>
+                    <tr id="spacers">
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>1982 C.E</td>
+                        <td>Robots and spacers era</td>
+                        <td>Birth of Susan Calvin. Lawrance Robertson founds U.S. Robot and Mechanical
+                            Men, Inc.<p class="from-novel">[the complete robot]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>2007 - 2008 C.E</td>
+                        <td> </td>
+                        <td>
+                            Susan Calvin begins to work for U.S. Robot. Later, becomes a robotpsychologist at U.S. Robot
+                            and eventually chief robotpsychologist.
+                            <p class="from-novel">[the complete robot]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>2062 C.E</td>
+                        <td> </td>
+                        <td>With the use of hyperdrive mankind begins to swarm out of Earth. People
+                            bring along the virus of Chaos to the stars. Through robotic terraforming of
+                            several planets (the Outer Worlds) and their population the culture of
+                            Spacers arises. The first Spacer world is a planet of Tau Ceti's system
+                            named New Earth. Later it is renamed Aurora. In the beginning the Outer
+                            Worlds use robots in limited numbers just as Earth.
+                            <p class="from-novel">[the complete robot] [robots of dawn]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-up-down"></i></summary>
+                                <p class="summary-bg">'Foundation's triumph' is a part of the second foundation
+                                    trilology. While authorized by the Asimov estate, the series was not written by
+                                    Asimov himself.</p>
+                            </details>
+                        </td>
+                        <td>2064 C.E</td>
+                        <td> </td>
+                        <td>Death of Susan Calvin. Humanity begins colonizing several planets including Aurora. The
+                            first Chaos outbreaks affect civilication, breaking down confidence. On Eath, citizens
+                            cluster underground
+                            ban robots from cities. Relations between Earth and Spacer Worlds deteriote.<p class="from-novel">
+                                [the complete robot] [foundation's triumph]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-thumbs-down"></i></summary>
+                                <p class="summary-bg">'Foundation's triumph' is a part of the second foundation
+                                    trilology. While authorized by the Asimov estate, the series was not written by
+                                    Asimov himself.</p>
+                            </details>
+                        </td>
+                        <td>3100 C.E</td>
+                        <td> </td>
+                        <td>The first cases of mnemonic plague (also called Burundi's fever) appear on a
+                            few Spacer worlds, primarily on the oldest and most well-established
+                            colonies. The plague is a result of a virulent mutation of certain
+                            nanoorganisms used for the terraformation of Spacer planets. Burundi's fever
+                            causes a large percent of Spacers to forget their origins and history.
+                            <p class="from-novel">[foundation's triumph]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>3871 C.E</td>
+                        <td> </td>
+                        <td>Earth allows Spacer worlds to introduce robots to everyday life in unlimited
+                            numbers.<p class="from-novel">[caves of steel]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-thumbs-down"></i></summary>
+                                <p class="summary-bg">'Foundation's triumph' is a part of the second foundation
+                                    trilology. While authorized by the Asimov estate, the series was not written by
+                                    Asimov himself. The 'Robot World' series written by several authors is similar.</p>
+                            </details>
+                        </td>
+                        <td>3915 C.E</td>
+                        <td> </td>
+                        <td>First outbreaks of nanoplagues on Earth coincide with violent outbreaks of a
+                            variety of similar diseases throughout the Spacer Worlds, confusing attempts
+                            to determine a source or point of origin. Tensions rise between Earth and
+                            the Spacer colonies over who is to blame. General panic caused by the
+                            plagues makes Earthpeople turn against the intertwined science of nanotech
+                            and robotics. The use of robots is greatly restricted on Earth. Fleeing the
+                            plagues and robot persecution a new wave of emigrating Earthpeople hit the
+                            Outer Worlds.
+                            <p class="from-novel">[foundation's triumph] [robot world series]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>3971 C.E</td>
+                        <td> </td>
+                        <td>Outer Worlds limit emigration from Earth.
+                            <p class="from-novel">[caves of steel]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-up-down"></i></summary>
+                                <p class="summary-bg">'Foundation and Chaos' is a part of the second foundation
+                                    trilology. While authorized by the Asimov estate, the series was not written by
+                                    Asimov himself.</p>
+                            </details>
+                        </td>
+                        <td>4021 C.E</td>
+                        <td> </td>
+                        <td>The renaissance on both Earth and the Spacer worlds turns into history's
+                            first chaos outbreak. Overpopulated Earth provokes the Outer Worlds, which
+                            declare war against the motherworld. During the resulting Three Weeks' War
+                            (the Great Rebellion) Spacers defeat Earth and declare the Outer Worlds
+                            independent planets. Earth is isolated, emigration made impossible.
+                            <p class="from-novel">[caves of steel] [mother earth - short story] [foundation and chaos]
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-thumbs-up"></i></summary>
+                                <p class="summary-bg">'Foundation and Chaos' is a part of the second foundation
+                                    trilology. While authorized by the Asimov estate, the series was not written by
+                                    Asimov himself.</p>
+                            </details>
+                        </td>
+                        <td>4021 - 4121 C.E</td>
+                        <td> </td>
+                        <td>During the next milennium Earthpeople escape into metal-covered cities (the
+                            caves of steel). The rise of city culture, the introduction of hydroponics
+                            and the industrial use of robots outside the cities lessen the population
+                            and food problems on Earth. More benign nanotechnology is developed on Earth
+                            and on the Outer Worlds and introduced in many fields of industry.
+                            <p class="from-novel">[caves of steel]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-up-down"></i></summary>
+                                <p class="summary-bg">The Robot city series was not written by Asimov himself.</p>
+                            </details>
+                        <td>4050-4600 C.E</td>
+                        <td> </td>
+                        <td>Some experiments with nanotechnology go wrong on Earth, producing
+                            nanocolonies which begin to destroy their environment as nonorganic
+                            parasites. In the end these agressive colonies destroy themselves; only a
+                            few aberrant strains are preserved. Earth scientists unravel the puzzle of
+                            the nanoplagues and develop a number of successful treatments, eventually
+                            bringing them to manageable levels. Spacer scientists begin to make progress
+                            against their own nanoplagues, reducing them in number and virulence. Spacer
+                            medical technologies and bioscience make enormous strides, increasing
+                            lifespans and reducing age-related afflictions.
+                            <p class="from-novel">[caves of steel][robots of dawn] [Robot city series]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-thumbs-down"></i></summary>
+                                <p class="summary-bg">'Foundation and Chaos' is a part of the second foundation
+                                    trilology. While authorized by the Asimov estate, the series was not written by
+                                    Asimov himself.</p>
+                            </details>
+                        </td>
+                        <td>4620 C.E</td>
+                        <td>
+                        <td>The last major outbreak of mnemonic plague sweeps the younger Spacer worlds,
+                            signaling the last wave of virulent disease among them.
+                            <p class="from-novel">[foundation and chaos]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>4721 C.E</td>
+                        <td> </td>
+                        <td>New York is replaced with metal-covered New York City.
+                            <p class="from-novel">[caves of steel]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>4722 C.E</td>
+                        <td> </td>
+                        <td>Population of Solaria (fiftieth and last Spacer world) from Nexon begins.
+                            Beginning of the slow and almost unrecognizable decline of Spacer culture.
+                            <p class="from-novel">[the naked sun]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-up-down"></i></summary>
+                                <p class="summary-bg">'Caves of steel' is the only book written by Asimov himself.
+                                    'Aurora' is a (sort of) part of the 'Robot City' series.</p>
+                            </details>
+                        </td>
+                        <td>4750 C.E</td>
+                        <td> </td>
+                        <td>Mnemonic plague is reduced to the level of a social stigma, largely
+                            controlled, nearly eradicated. Direct contact is required to contract it
+                            from a carrier. It is rumored that Terrans spread the disease, fueling the
+                            anti-Earth sentiment among Spacers.
+                            <p class="from-novel">[aurora] [caves of steel] [foundation and chaos]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>4979 C.E</td>
+                        <td> </td>
+                        <td>Birth of Elijah Baley.
+                            <p class="from-novel">[pre-caves of steel]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>4996 C.E</td>
+                        <td> </td>
+                        <td>Spacetown is established near New York City. Thanks to Spacer influence
+                            robots are introduced to Earth's cities.<p class="from-novel">[caves of steel]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>5021 C.E</td>
+                        <td> </td>
+                        <td>Auroran roboticist Han Fastolfe and sociologist-historian Roj Nemennuh
+                            Sarton realize the decline of Spacer culture. They want to get Earth to
+                            colonize new planets using less robotic service than Spacers. They plan to
+                            send humaniform robots to mix among Earth population to understand their way
+                            of thinking. The first humaniform robot, Daneel Olivaw, is produced
+                            according to Fastolfe's design. Meeting of Daneel and Elijah Baley.<p class="from-novel">
+                                [caves of steel]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>5022 C.E</td>
+                        <td> </td>
+                        <td>Elijah Baley and Daneel Olivaw investigate a murder case on Solaria. They
+                            discover that the crime was committed by roboticist Jothan Leebig, who
+                            planned to build spaceships with positronic brains. A fleet of these ships
+                            could protect the pathologically misanthropic society of Solaria from any
+                            potential outside threat. Leebig commits suicide. Fastolfe becomes an
+                            influential member of the Auroran government and strongly supports new Earth
+                            emigration. His Auroran opponents led by Kelden Amadiro want to terraform
+                            and populate new planets from Aurora instead of Earth. A group of
+                            Earthpeople led by Baley train to live outside the city domes to be able to
+                            colonize new planets.<p class="from-novel">[the naked sun]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>5024 C.E</td>
+                        <td> </td>
+                        <td>Amy Barone-Stein joins Baley's would-be settlers. Baley investigates a case
+                            of roboticide on Aurora accompanied by Daneel and Giskard Reventlov. In the
+                            background of the 'murder' lies the power struggle between Fastolfe and his
+                            opponents over the new colonization. Finally Aurora allows the Earth to
+                            terraform new planets and will provide technical support for the task.
+                            Giskard thinks Earthpeople must settle on worlds without robots to evade the
+                            fate of Spacers. Giskard describes the idea of psychohistory, a science that
+                            can foretell events of the future.<p class="from-novel">[robots of dawn]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>5026 C.E</td>
+                        <td> </td>
+                        <td>The second swarm of humans from Earth begins with Auroran support. They use
+                            no robotic service at all. The first colonist group is lead by Ben Baley.
+                            The first terraformed (so called Settler) planet will later be called
+                            Baleyworld. Earth plans to ban use of robots inside its cities.<p class="from-novel">[robots
+                                of dawn]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>5028 C.E</td>
+                        <td> </td>
+                        <td>There are already twenty-four Settler planets. The relationship between the
+                            Settler and Spacer worlds becomes increasingly hostile.<p class="from-novel">[robots of
+                                dawn] [robots and empire]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-up-down"></i></summary>
+                                <p class="summary-bg">Kyning Parapyos and his syndicate are a part of the
+                                    Aurora-triology and not authorized by the Asimov Estate. </p>
+                            </details>
+                        </td>
+        
+                        <td>5040 C.E</td>
+                        <td> </td>
+                        <td>Robots are in Earth's cities. Technologies based on aggressive,
+                            self-programming nano-machines are also abandoned. The Hunter Group (the
+                            legal face of the crime syndicate of arms dealer Kynig Parapoyos) is founded
+                            on an undisclosed Settler world.<p class="from-novel">[robots and empire] [mirage]</p>
+                        </td>
+        
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>5058 C.E</td>
+                        <td> </td>
+                        <td>Death of Elijah Bailey.<p class="from-novel">[robots and empire]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-thumbs-down"></i></summary>
+                                <p class="summary-bg">'Mirage' is a part of the Aurora-triology and not authorized by
+                                    the Asimov Estate. </p>
+                            </details>
+                        </td>
+                        <td>5173 C.E</td>
+                        <td> </td>
+                        <td>A lab is established on Cassus Thole. Kynig Parapoyos'
+                            researchers start to develop new infectious agents and their cures in the
+                            lab. They test their products on the planet's population in secret. They
+                            plan to infect the people of newly colonized Settler planets with their
+                            newly developed agents, and later make enormous profits by selling their
+                            treatments. The planet is later renamed Nova Levis. Thanks to Parapoyos'
+                            organization Nova Levis gradually grows to be the center of illegal trade.<p class="from-novel">
+                                [mirage]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-thumbs-down"></i></summary>
+                                <p class="summary-bg">'Mirage' is a part of the Aurora-triology and not authorized by
+                                    the Asimov Estate. </p>
+                            </details>
+                        </td>
+                        <td>5199 C.E</td>
+                        <td> </td>
+                        <td>Terran senator Clar Eliton invites Spacer and Settler diplomats to discuss
+                            the possible reintroduction of robots on Earth and in Settler space trade;
+                            in the meantime Eliton organizes an assassination against the diplomats in
+                            order to completely discredit robots on Earth. Derec Avery's robot Bogard
+                            proves instrumental in solving the crime. After the assassination most of
+                            the diplomats of the Fifty Worlds leave Earth. A smuggler ship leaving Nova
+                            Levis fires on a Terran patrol ship. Earth blockades Nova Levis.<p class="from-novel">
+                                [mirage]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-thumbs-down"></i></summary>
+                                <p class="summary-bg">'Mirage' is a part of the Aurora-triology and not authorized by
+                                    the Asimov Estate. </p>
+                            </details>
+                        </td>
+                        <td>5202 C.E</td>
+                        <td> </td>
+                        <td>The autonomous robot Bogard assumes control of the Parapoyos organization.
+                            It begins a program, in concert with a faction of Spacer robots, to isolate
+                            Spacers in order to allow them to die out as a result of the determination
+                            that the millennia of coexistence with numerous mutated nanoforms has
+                            altered them genetically to a condition where they represent a potential new
+                            species. Robots are dedicated to service to Homo sapiens sapiens and cannot
+                            have two masters.<p class="from-novel">[mirage]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>5217 C.E</td>
+                        <td> </td>
+                        <td>Kelden Amadiro and his group begin planting nuclear amplifiers throughout
+                            Earth to take revenge for their defeat.<p class="from-novel">[robots and empire]</p>
+                        </td>
+        
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-thumbs-up"></i></td>
+                        <td>5222 C.E</td>
+                        <td> </td>
+                        <td>Anti-Earth and anti-Settler movement on Aurora gains
+                            momentum. Population of Solaria vanishes. Number and strength of Settler
+                            worlds grows fast. Daneel and Giskard formulate the Zeroth Law of Robotics.
+                            They realize they will need a working psychohistory to steer human history
+                            according to the Zeroth Law. Amadiro's group turn their amplifiers on to
+                            make Earth radioactive and inhospitable. Giskard lets them proceed,
+                            rationalizing that the poisoning of Earth would speed up the Settler swarm
+                            and do humanity good in the long run. His decision, however, creates an
+                            internal conflict between the Zeroth and the First Law, which ultimately
+                            leads to Giskard's death. Giskard provides Daneel with telepathic abilities,
+                            then becomes inoperational and dies. Settler emigration grows to enormous
+                            numbers: beginning of the Great Diaspora. Settlers carry the virus of Chaos
+                            everywhere.<p class="from-novel">[robots and empire]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-thumbs-down"></i></summary>
+                                <p class="summary-bg">'Foundation and chaos' is a part of the second foundation
+                                    triology.</p>
+                            </details>
+                        </td>
+                        <td>5250 C.E</td>
+                        <td> </td>
+                        <td>A majority of robots split into two camps. 'Giskardians' led by Daneel
+                            believe in the new Zeroth Law religion. Others - the 'Calvinians', Plussix
+                            among them - think their meddling with human affairs according to the Zeroth
+                            Law to be an outrage. A robotic civil war ensues mostly unseen by humans
+                            fleeing the sudden poisoning of Earth. Meanwhile fleets of robots -
+                            operating under Auroran programming - begin cruising the galaxy ahead of the
+                            spreading Settlers, terraforming and preparing planets for colonization.
+                            Several nonhuman intelligent races, sometimes complete ecosystems are
+                            destroyed by robot terraformers. On some planets they discover computer
+                            civilizations, remnants of once-great nonhuman cultures. The Auroran robots
+                            try to destroy the beings of these civilizations, the meme entities, as
+                            potential threaths. Some of the memes escape to the Galactic Core.<p class="from-novel">
+                                [foundation and chaos]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-thumbs-down"></i></summary>
+                                <p class="summary-bg">'Inferno' is a part of the 'Robot city' novels.</p>
+                            </details>
+                        </td>
+                        <td>5321 C.E</td>
+                        <td> </td>
+                        <td>The Spacer planet Inferno is threatened by both an ecological and a cultural
+                            catastrophe. To avoid the ecological catastrophe, the planet's new governor,
+                            Chanto Grieg asks a group of Settler specialists to reterraform the planet.<p class="from-novel">
+                                [inferno]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-thumbs-down"></i></summary>
+                                <p class="summary-bg">'Inferno' is a part of the 'Robot city' novels.</p>
+                            </details>
+                        </td>
+                        <td>5328 C.E</td>
+                        <td> </td>
+                        <td>An ice-comet is crashed onto Inferno's surface in order to stabilize the
+                            ecosystem and to speed up the reterraformation process. Cultural crisis is
+                            evaded by the merging of Spacers and the Settler terraformers.<p class="from-novel">
+                                [inferno]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-thumbs-down"></i></summary>
+                                <p class="summary-bg">'Foundation and chaos' is a part of the 'Second foundation
+                                    triology'.</p>
+                            </details>
+                        </td>
+                        <td>5500 C.E</td>
+                        <td> </td>
+                        <td>The interstellar robot civil war eventually reaches Inferno. New Law robots
+                            are destroyed or go into hiding.<p class="from-novel">[foundation and chaos]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details>
+                                <summary><i class="fa-solid fa-thumbs-down"></i></summary>
+                                <p class="summary-bg">'Foundation and chaos' is a part of the 'Second foundation
+                                    triology'.</p>
+                            </details>
+                        </td>
+                        <td>6000 C.E</td>
+                        <td> </td>
+                        <td>Daneel and his followers play an important role in formulating the Encoding
+                            Laws that will set the highest limits in producing artificial intelligence.
+                            As a result, Settler society will never think of building robots. This is
+                            one of the first great 'damping mechanisms' that help prevent chaos.<p class="from-novel">
+                                [foundation and chaos]</p>
                         </td>
                     </tr>
                 </table>
-            </div>
-        </div>
-
-        <br><br>
-        <hr class="hor-row-nav">
-
-        <table class="table-center table-bg-blue-no-border links-table">
-            <tr>
-                <td>
-                    <details>
-                        <summary><a href="#spacers" class="active-timeline">Robots and spacers era</a></summary>
-                        <p class="summary-bg">The spacers were a race of long-lived humans that had settled 50
-                            planets and despised their
-                            shortlived relatives on earth.</p>
-                    </details>
-                </td>
-                <td>
-                    <details>
-                        <summary><a href="#rise">Rise of galactic empire era</a></summary>
-                        <p class="summary-bg">'Rise of' is up to the point when the first Emperor Frankenn I is
-                            coronated for the galaxy-wide empire. The "smaller" Trantorian empire before that is
-                            still considered to be in the 'rise-of' era</p>
-                    </details>
-                </td>
-                <td>
-                    <details>
-                        <summary><a href="#empire">Galactic Empire era</a></summary>
-                        <p class="summary-bg">At its peak, the Empire consisted of more than 25 million
-                            inhabited worlds spread around the galaxy, with an average of 1 billion people per
-                            planet.</p>
-                    </details>
-                </td>
-                <td>
-                    <details>
-                        <summary><a href="#foundation">Foundation era</a></summary>
-                        <p class="summary-bg">While smaller in size than the Empire, it was more powerful and
-                            maybe more stable.</p>
-                    </details>
-                </td>
-            </tr>
-            <tr>
-                <td>Approximately between 1982 C.E and 6000 C.E</td>
-                <td>Approximately between 6000 C.E and 13,000 C.E</td>
-                <td>Approximatekly between 13,000 C.E. and 25,000 C.E</td>
-                <td>Approximately between 25,000 C.E and 25,520 C.E (and counting. No end-date specified).</td>
-            </tr>
-        </table>
-        <br>
-        <table id="timeline-table" class="table-bg-blue-no-border links-table">
-            <tr>
-                <th>Canon</th>
-                <th>Year</th>
-                <th>Era</th>
-                <th>Event</th>
-            </tr>
-            <tr id="spacers">
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>1982 C.E</td>
-                <td>Robots and spacers era</td>
-                <td>Birth of Susan Calvin. Lawrance Robertson founds U.S. Robot and Mechanical
-                    Men, Inc.<p class="from-novel">[the complete robot]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>2007 - 2008 C.E</td>
-                <td> </td>
-                <td>
-                    Susan Calvin begins to work for U.S. Robot. Later, becomes a robotpsychologist at U.S. Robot
-                    and eventually chief robotpsychologist.
-                    <p class="from-novel">[the complete robot]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>2062 C.E</td>
-                <td> </td>
-                <td>With the use of hyperdrive mankind begins to swarm out of Earth. People
-                    bring along the virus of Chaos to the stars. Through robotic terraforming of
-                    several planets (the Outer Worlds) and their population the culture of
-                    Spacers arises. The first Spacer world is a planet of Tau Ceti's system
-                    named New Earth. Later it is renamed Aurora. In the beginning the Outer
-                    Worlds use robots in limited numbers just as Earth.
-                    <p class="from-novel">[the complete robot] [robots of dawn]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-up-down"></i></summary>
-                        <p class="summary-bg">'Foundation's triumph' is a part of the second foundation
-                            trilology. While authorized by the Asimov estate, the series was not written by
-                            Asimov himself.</p>
-                    </details>
-                </td>
-                <td>2064 C.E</td>
-                <td> </td>
-                <td>Death of Susan Calvin. Humanity begins colonizing several planets including Aurora. The
-                    first Chaos outbreaks affect civilication, breaking down confidence. On Eath, citizens
-                    cluster underground
-                    ban robots from cities. Relations between Earth and Spacer Worlds deteriote.<p class="from-novel">
-                        [the complete robot] [foundation's triumph]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-thumbs-down"></i></summary>
-                        <p class="summary-bg">'Foundation's triumph' is a part of the second foundation
-                            trilology. While authorized by the Asimov estate, the series was not written by
-                            Asimov himself.</p>
-                    </details>
-                </td>
-                <td>3100 C.E</td>
-                <td> </td>
-                <td>The first cases of mnemonic plague (also called Burundi's fever) appear on a
-                    few Spacer worlds, primarily on the oldest and most well-established
-                    colonies. The plague is a result of a virulent mutation of certain
-                    nanoorganisms used for the terraformation of Spacer planets. Burundi's fever
-                    causes a large percent of Spacers to forget their origins and history.
-                    <p class="from-novel">[foundation's triumph]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>3871 C.E</td>
-                <td> </td>
-                <td>Earth allows Spacer worlds to introduce robots to everyday life in unlimited
-                    numbers.<p class="from-novel">[caves of steel]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-thumbs-down"></i></summary>
-                        <p class="summary-bg">'Foundation's triumph' is a part of the second foundation
-                            trilology. While authorized by the Asimov estate, the series was not written by
-                            Asimov himself. The 'Robot World' series written by several authors is similar.</p>
-                    </details>
-                </td>
-                <td>3915 C.E</td>
-                <td> </td>
-                <td>First outbreaks of nanoplagues on Earth coincide with violent outbreaks of a
-                    variety of similar diseases throughout the Spacer Worlds, confusing attempts
-                    to determine a source or point of origin. Tensions rise between Earth and
-                    the Spacer colonies over who is to blame. General panic caused by the
-                    plagues makes Earthpeople turn against the intertwined science of nanotech
-                    and robotics. The use of robots is greatly restricted on Earth. Fleeing the
-                    plagues and robot persecution a new wave of emigrating Earthpeople hit the
-                    Outer Worlds.
-                    <p class="from-novel">[foundation's triumph] [robot world series]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>3971 C.E</td>
-                <td> </td>
-                <td>Outer Worlds limit emigration from Earth.
-                    <p class="from-novel">[caves of steel]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-up-down"></i></summary>
-                        <p class="summary-bg">'Foundation and Chaos' is a part of the second foundation
-                            trilology. While authorized by the Asimov estate, the series was not written by
-                            Asimov himself.</p>
-                    </details>
-                </td>
-                <td>4021 C.E</td>
-                <td> </td>
-                <td>The renaissance on both Earth and the Spacer worlds turns into history's
-                    first chaos outbreak. Overpopulated Earth provokes the Outer Worlds, which
-                    declare war against the motherworld. During the resulting Three Weeks' War
-                    (the Great Rebellion) Spacers defeat Earth and declare the Outer Worlds
-                    independent planets. Earth is isolated, emigration made impossible.
-                    <p class="from-novel">[caves of steel] [mother earth - short story] [foundation and chaos]
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-thumbs-up"></i></summary>
-                        <p class="summary-bg">'Foundation and Chaos' is a part of the second foundation
-                            trilology. While authorized by the Asimov estate, the series was not written by
-                            Asimov himself.</p>
-                    </details>
-                </td>
-                <td>4021 - 4121 C.E</td>
-                <td> </td>
-                <td>During the next milennium Earthpeople escape into metal-covered cities (the
-                    caves of steel). The rise of city culture, the introduction of hydroponics
-                    and the industrial use of robots outside the cities lessen the population
-                    and food problems on Earth. More benign nanotechnology is developed on Earth
-                    and on the Outer Worlds and introduced in many fields of industry.
-                    <p class="from-novel">[caves of steel]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-up-down"></i></summary>
-                        <p class="summary-bg">The Robot city series was not written by Asimov himself.</p>
-                    </details>
-                <td>4050-4600 C.E</td>
-                <td> </td>
-                <td>Some experiments with nanotechnology go wrong on Earth, producing
-                    nanocolonies which begin to destroy their environment as nonorganic
-                    parasites. In the end these agressive colonies destroy themselves; only a
-                    few aberrant strains are preserved. Earth scientists unravel the puzzle of
-                    the nanoplagues and develop a number of successful treatments, eventually
-                    bringing them to manageable levels. Spacer scientists begin to make progress
-                    against their own nanoplagues, reducing them in number and virulence. Spacer
-                    medical technologies and bioscience make enormous strides, increasing
-                    lifespans and reducing age-related afflictions.
-                    <p class="from-novel">[caves of steel][robots of dawn] [Robot city series]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-thumbs-down"></i></summary>
-                        <p class="summary-bg">'Foundation and Chaos' is a part of the second foundation
-                            trilology. While authorized by the Asimov estate, the series was not written by
-                            Asimov himself.</p>
-                    </details>
-                </td>
-                <td>4620 C.E</td>
-                <td>
-                <td>The last major outbreak of mnemonic plague sweeps the younger Spacer worlds,
-                    signaling the last wave of virulent disease among them.
-                    <p class="from-novel">[foundation and chaos]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>4721 C.E</td>
-                <td> </td>
-                <td>New York is replaced with metal-covered New York City.
-                    <p class="from-novel">[caves of steel]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>4722 C.E</td>
-                <td> </td>
-                <td>Population of Solaria (fiftieth and last Spacer world) from Nexon begins.
-                    Beginning of the slow and almost unrecognizable decline of Spacer culture.
-                    <p class="from-novel">[the naked sun]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-up-down"></i></summary>
-                        <p class="summary-bg">'Caves of steel' is the only book written by Asimov himself.
-                            'Aurora' is a (sort of) part of the 'Robot City' series.</p>
-                    </details>
-                </td>
-                <td>4750 C.E</td>
-                <td> </td>
-                <td>Mnemonic plague is reduced to the level of a social stigma, largely
-                    controlled, nearly eradicated. Direct contact is required to contract it
-                    from a carrier. It is rumored that Terrans spread the disease, fueling the
-                    anti-Earth sentiment among Spacers.
-                    <p class="from-novel">[aurora] [caves of steel] [foundation and chaos]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>4979 C.E</td>
-                <td> </td>
-                <td>Birth of Elijah Baley.
-                    <p class="from-novel">[pre-caves of steel]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>4996 C.E</td>
-                <td> </td>
-                <td>Spacetown is established near New York City. Thanks to Spacer influence
-                    robots are introduced to Earth's cities.<p class="from-novel">[caves of steel]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>5021 C.E</td>
-                <td> </td>
-                <td>Auroran roboticist Han Fastolfe and sociologist-historian Roj Nemennuh
-                    Sarton realize the decline of Spacer culture. They want to get Earth to
-                    colonize new planets using less robotic service than Spacers. They plan to
-                    send humaniform robots to mix among Earth population to understand their way
-                    of thinking. The first humaniform robot, Daneel Olivaw, is produced
-                    according to Fastolfe's design. Meeting of Daneel and Elijah Baley.<p class="from-novel">
-                        [caves of steel]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>5022 C.E</td>
-                <td> </td>
-                <td>Elijah Baley and Daneel Olivaw investigate a murder case on Solaria. They
-                    discover that the crime was committed by roboticist Jothan Leebig, who
-                    planned to build spaceships with positronic brains. A fleet of these ships
-                    could protect the pathologically misanthropic society of Solaria from any
-                    potential outside threat. Leebig commits suicide. Fastolfe becomes an
-                    influential member of the Auroran government and strongly supports new Earth
-                    emigration. His Auroran opponents led by Kelden Amadiro want to terraform
-                    and populate new planets from Aurora instead of Earth. A group of
-                    Earthpeople led by Baley train to live outside the city domes to be able to
-                    colonize new planets.<p class="from-novel">[the naked sun]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>5024 C.E</td>
-                <td> </td>
-                <td>Amy Barone-Stein joins Baley's would-be settlers. Baley investigates a case
-                    of roboticide on Aurora accompanied by Daneel and Giskard Reventlov. In the
-                    background of the 'murder' lies the power struggle between Fastolfe and his
-                    opponents over the new colonization. Finally Aurora allows the Earth to
-                    terraform new planets and will provide technical support for the task.
-                    Giskard thinks Earthpeople must settle on worlds without robots to evade the
-                    fate of Spacers. Giskard describes the idea of psychohistory, a science that
-                    can foretell events of the future.<p class="from-novel">[robots of dawn]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>5026 C.E</td>
-                <td> </td>
-                <td>The second swarm of humans from Earth begins with Auroran support. They use
-                    no robotic service at all. The first colonist group is lead by Ben Baley.
-                    The first terraformed (so called Settler) planet will later be called
-                    Baleyworld. Earth plans to ban use of robots inside its cities.<p class="from-novel">[robots
-                        of dawn]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>5028 C.E</td>
-                <td> </td>
-                <td>There are already twenty-four Settler planets. The relationship between the
-                    Settler and Spacer worlds becomes increasingly hostile.<p class="from-novel">[robots of
-                        dawn] [robots and empire]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-up-down"></i></summary>
-                        <p class="summary-bg">Kyning Parapyos and his syndicate are a part of the
-                            Aurora-triology and not authorized by the Asimov Estate. </p>
-                    </details>
-                </td>
-
-                <td>5040 C.E</td>
-                <td> </td>
-                <td>Robots are in Earth's cities. Technologies based on aggressive,
-                    self-programming nano-machines are also abandoned. The Hunter Group (the
-                    legal face of the crime syndicate of arms dealer Kynig Parapoyos) is founded
-                    on an undisclosed Settler world.<p class="from-novel">[robots and empire] [mirage]</p>
-                </td>
-
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>5058 C.E</td>
-                <td> </td>
-                <td>Death of Elijah Bailey.<p class="from-novel">[robots and empire]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-thumbs-down"></i></summary>
-                        <p class="summary-bg">'Mirage' is a part of the Aurora-triology and not authorized by
-                            the Asimov Estate. </p>
-                    </details>
-                </td>
-                <td>5173 C.E</td>
-                <td> </td>
-                <td>A lab is established on Cassus Thole. Kynig Parapoyos'
-                    researchers start to develop new infectious agents and their cures in the
-                    lab. They test their products on the planet's population in secret. They
-                    plan to infect the people of newly colonized Settler planets with their
-                    newly developed agents, and later make enormous profits by selling their
-                    treatments. The planet is later renamed Nova Levis. Thanks to Parapoyos'
-                    organization Nova Levis gradually grows to be the center of illegal trade.<p class="from-novel">
-                        [mirage]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-thumbs-down"></i></summary>
-                        <p class="summary-bg">'Mirage' is a part of the Aurora-triology and not authorized by
-                            the Asimov Estate. </p>
-                    </details>
-                </td>
-                <td>5199 C.E</td>
-                <td> </td>
-                <td>Terran senator Clar Eliton invites Spacer and Settler diplomats to discuss
-                    the possible reintroduction of robots on Earth and in Settler space trade;
-                    in the meantime Eliton organizes an assassination against the diplomats in
-                    order to completely discredit robots on Earth. Derec Avery's robot Bogard
-                    proves instrumental in solving the crime. After the assassination most of
-                    the diplomats of the Fifty Worlds leave Earth. A smuggler ship leaving Nova
-                    Levis fires on a Terran patrol ship. Earth blockades Nova Levis.<p class="from-novel">
-                        [mirage]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-thumbs-down"></i></summary>
-                        <p class="summary-bg">'Mirage' is a part of the Aurora-triology and not authorized by
-                            the Asimov Estate. </p>
-                    </details>
-                </td>
-                <td>5202 C.E</td>
-                <td> </td>
-                <td>The autonomous robot Bogard assumes control of the Parapoyos organization.
-                    It begins a program, in concert with a faction of Spacer robots, to isolate
-                    Spacers in order to allow them to die out as a result of the determination
-                    that the millennia of coexistence with numerous mutated nanoforms has
-                    altered them genetically to a condition where they represent a potential new
-                    species. Robots are dedicated to service to Homo sapiens sapiens and cannot
-                    have two masters.<p class="from-novel">[mirage]</p>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>5217 C.E</td>
-                <td> </td>
-                <td>Kelden Amadiro and his group begin planting nuclear amplifiers throughout
-                    Earth to take revenge for their defeat.<p class="from-novel">[robots and empire]</p>
-                </td>
-
-            </tr>
-            <tr>
-                <td><i class="fa-solid fa-thumbs-up"></i></td>
-                <td>5222 C.E</td>
-                <td> </td>
-                <td>Anti-Earth and anti-Settler movement on Aurora gains
-                    momentum. Population of Solaria vanishes. Number and strength of Settler
-                    worlds grows fast. Daneel and Giskard formulate the Zeroth Law of Robotics.
-                    They realize they will need a working psychohistory to steer human history
-                    according to the Zeroth Law. Amadiro's group turn their amplifiers on to
-                    make Earth radioactive and inhospitable. Giskard lets them proceed,
-                    rationalizing that the poisoning of Earth would speed up the Settler swarm
-                    and do humanity good in the long run. His decision, however, creates an
-                    internal conflict between the Zeroth and the First Law, which ultimately
-                    leads to Giskard's death. Giskard provides Daneel with telepathic abilities,
-                    then becomes inoperational and dies. Settler emigration grows to enormous
-                    numbers: beginning of the Great Diaspora. Settlers carry the virus of Chaos
-                    everywhere.<p class="from-novel">[robots and empire]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-thumbs-down"></i></summary>
-                        <p class="summary-bg">'Foundation and chaos' is a part of the second foundation
-                            triology.</p>
-                    </details>
-                </td>
-                <td>5250 C.E</td>
-                <td> </td>
-                <td>A majority of robots split into two camps. 'Giskardians' led by Daneel
-                    believe in the new Zeroth Law religion. Others - the 'Calvinians', Plussix
-                    among them - think their meddling with human affairs according to the Zeroth
-                    Law to be an outrage. A robotic civil war ensues mostly unseen by humans
-                    fleeing the sudden poisoning of Earth. Meanwhile fleets of robots -
-                    operating under Auroran programming - begin cruising the galaxy ahead of the
-                    spreading Settlers, terraforming and preparing planets for colonization.
-                    Several nonhuman intelligent races, sometimes complete ecosystems are
-                    destroyed by robot terraformers. On some planets they discover computer
-                    civilizations, remnants of once-great nonhuman cultures. The Auroran robots
-                    try to destroy the beings of these civilizations, the meme entities, as
-                    potential threaths. Some of the memes escape to the Galactic Core.<p class="from-novel">
-                        [foundation and chaos]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-thumbs-down"></i></summary>
-                        <p class="summary-bg">'Inferno' is a part of the 'Robot city' novels.</p>
-                    </details>
-                </td>
-                <td>5321 C.E</td>
-                <td> </td>
-                <td>The Spacer planet Inferno is threatened by both an ecological and a cultural
-                    catastrophe. To avoid the ecological catastrophe, the planet's new governor,
-                    Chanto Grieg asks a group of Settler specialists to reterraform the planet.<p class="from-novel">
-                        [inferno]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-thumbs-down"></i></summary>
-                        <p class="summary-bg">'Inferno' is a part of the 'Robot city' novels.</p>
-                    </details>
-                </td>
-                <td>5328 C.E</td>
-                <td> </td>
-                <td>An ice-comet is crashed onto Inferno's surface in order to stabilize the
-                    ecosystem and to speed up the reterraformation process. Cultural crisis is
-                    evaded by the merging of Spacers and the Settler terraformers.<p class="from-novel">
-                        [inferno]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-thumbs-down"></i></summary>
-                        <p class="summary-bg">'Foundation and chaos' is a part of the 'Second foundation
-                            triology'.</p>
-                    </details>
-                </td>
-                <td>5500 C.E</td>
-                <td> </td>
-                <td>The interstellar robot civil war eventually reaches Inferno. New Law robots
-                    are destroyed or go into hiding.<p class="from-novel">[foundation and chaos]</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <details>
-                        <summary><i class="fa-solid fa-thumbs-down"></i></summary>
-                        <p class="summary-bg">'Foundation and chaos' is a part of the 'Second foundation
-                            triology'.</p>
-                    </details>
-                </td>
-                <td>6000 C.E</td>
-                <td> </td>
-                <td>Daneel and his followers play an important role in formulating the Encoding
-                    Laws that will set the highest limits in producing artificial intelligence.
-                    As a result, Settler society will never think of building robots. This is
-                    one of the first great 'damping mechanisms' that help prevent chaos.<p class="from-novel">
-                        [foundation and chaos]</p>
-                </td>
-            </tr>
-        </table>
-
-        <br><br>
+                <br><br>
         <hr class="hor-row-nav">
 
         <table class="table-center table-bg-blue-no-border links-table">
@@ -688,7 +665,6 @@
                 <td>Approximately between 25,000 C.E and 25,520 C.E (and counting. No end-date specified).</td>
             </tr>
         </table><br>
-
         <table id="timeline-table2" class="table-bg-blue-no-border links-table">
             <tr>
                 <th>Canon</th>
@@ -1315,6 +1291,7 @@
                     <p class="from-novel">[foundation and chaos] [forward the foundation]</td>
             </tr>
         </table>
+        
         <br><br>
         <hr class="hor-row-nav">
 
@@ -1758,10 +1735,9 @@
                 </td>
             </tr>
         </table>
-        <div>
-            <br><br>
+        <br><br>
             <hr class="hor-row-nav">
-            <p class="main">
+            <p>
                 That's it. Now we have reached the end-of-the-line. And the year is now around 26,000 years
                 after
                 people thought it would be a good idea to nail a guy to a cross just because he thought it would
@@ -1769,32 +1745,39 @@
                 good if people could be kind to one another for
                 a change. Maybe we haven't learned all that much after all...
             </p>
+
+                <label>
+                    <input type="checkbox" hidden>
+                    <span class="menu"> <span class="hamburger"></span></span>
+                    <ul>
+                        <nav id="hide-menu">
+                            <!-- should not be seen when screen > 600 -->
+                            <a href="index.html" aria-label="Return to startpage">About</a>
+                            <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
+                            <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
+                            <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
+                            <a href="media.html" aria-label="Go to media page">Media</a>
+                            <a href="contact.html" aria-label="Go to contact page">Contact</a>
+                            <hr class="hor-row-nav">
+                            <table>
+                                <tr>
+                                    <td><a href="https://twitter.com/home?lang=en" target="_blank"
+                                            aria-label="Link to twitter (opens in new tab)"><i
+                                                class="fa-brands fa-twitter"></i></a>
+                                    </td>
+                                    <td><a href="https://www.facebook.com/" target="_blank"
+                                            aria-label="Link to facebook (opens in new tab)"><i
+                                                class="fa-brands fa-facebook"></i></a></td>
+                                    <td><a href="https://www.instagram.com/" target="_blank"
+                                            aria-label="Link to Instagram (opens in new tab)"><i
+                                                class="fa-brands fa-instagram"></i></a></td>
+                                </tr>
+                            </table>
+                        </nav>
+                    </ul>
+                </label>
+            </div>
         </div>
-    </div>
-    <div class="sidenav" id="side-nav">
-        <nav>
-            <a href="index.html" aria-label="Go to start page">About</a>
-            <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
-            <a href="timeline.html" class="active" aria-label="Go to timeline page">Timeline</a>
-            <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
-            <a href="media.html" aria-label="Go to media page">Media</a>
-            <a href="contact.html" aria-label="Go to contact page">Contact</a>
-            <hr class="hor-row-nav">
-            <table>
-                <tr>
-                    <td><a href="https://twitter.com/home?lang=en" target="_blank"
-                            aria-label="Link to twitter (opens in new tab)"><i class="fa-brands fa-twitter"></i></a>
-                    </td>
-                    <td><a href="https://www.facebook.com/" target="_blank"
-                            aria-label="Link to facebook (opens in new tab)"><i class="fa-brands fa-facebook"></i></a>
-                    </td>
-                    <td><a href="https://www.instagram.com/" target="_blank"
-                            aria-label="Link to Instagram (opens in new tab)"><i class="fa-brands fa-instagram"></i></a>
-                    </td>
-                </tr>
-            </table>
-        </nav>
-    </div>
 
     <!-- font awsome -->
 

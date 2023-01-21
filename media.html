@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/player.css">
     <link rel="stylesheet" href="assets/css/hamburger.css">
     <title>Media: The Encyclopedia Galactica</title>
-
+<!-- inline style documented in player.css-->
     <style>
         .hytPlayerWrap {
             display: inline-block;
@@ -51,61 +50,53 @@
         }
     </style>
 </head>
-
 <body>
-
+    <header>
+        <div>
+            <a href="index.html" aria-label="Return to startpage"><img src="assets/pictures/azimov.png"
+                    alt="Isaac Asimov" id="isac-face" width="100" height="118"></a>
+            <h1 id="encyc-header">the encyclopedia galactica</h1>
+            <h2 id="published">(as published by the Encyclopedia Galactica Publishing Company, 116th Edition,
+                published 1020 F.E)
+                (c) The 'It Works On My System Group', Ltd. 2022-2023</h2>
+        </div>
+    </header>
     <div id="main-id">
-        <!-- dummy for semantic html-->
-        <header>
-            <div>
-                <a href="index.html" aria-label="Return to startpage"><img src="assets/pictures/azimov.png"
-                        alt="Isaac Asimov" id="isac-face" width="100" height="118"></a>
-                <h1 id="encyc-header">the encyclopedia galactica</h1>
-                <h2 id="published">(as published by the Encyclopedia Galactica Publishing Company, 116th Edition,
-                    published 1020 F.E)
-                    (c) The 'It Works On My System Group', Ltd. 2022-2023</h2>
+        <div id="left-column-id" class="split1 left-column">
+            <div id="side-nav" class="sidenav">
+                <!--Should be hidden when screen size is less than 600-->
+                <nav>
+                    <a href="index.html" aria-label="Go to start page">About</a>
+                    <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
+                    <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
+                    <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
+                    <a href="media.html" class="active" aria-label="Go to media page">Media</a>
+                    <a href="contact.html" aria-label="Go to contact page">Contact</a>
+                    <hr class="hor-row-nav">
+                    <table>
+                        <tr>
+                            <td><a href="https://twitter.com/home?lang=en" target="_blank"
+                                    aria-label="Link to twitter (opens in new tab)"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                            </td>
+                            <td><a href="https://www.facebook.com/" target="_blank"
+                                    aria-label="Link to facebook (opens in new tab)"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                            </td>
+                            <td><a href="https://www.instagram.com/" target="_blank"
+                                    aria-label="Link to Instagram (opens in new tab)"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </td>
+                        </tr>
+                    </table>
+                </nav>
             </div>
-        </header>
-        <div>
+        </div>
+        <div class="split2 right-column">
             <p class="page-title">Some media</p>
-        </div>
-        <div>
-            <label>
-                <input type="checkbox" hidden>
-                <span class="menu"> <span class="hamburger"></span></span>
-
-                <ul class="main">
-                    <nav id="hide-menu">
-                        <!-- should not be seen when screen > 600 -->
-                        <a href="index.html" aria-label="Return to startpage">About</a>
-                        <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
-                        <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
-                        <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
-                        <a href="media.html" aria-label="Go to media page">Media</a>
-                        <a href="contact.html" aria-label="Go to contact page">Contact</a>
-                        <hr class="hor-row-nav">
-                        <table>
-                            <tr>
-                                <td><a href="https://twitter.com/home?lang=en" target="_blank"
-                                        aria-label="Link to twitter (opens in new tab)"><i
-                                            class="fa-brands fa-twitter"></i></a>
-                                </td>
-                                <td><a href="https://www.facebook.com/" target="_blank"
-                                        aria-label="Link to facebook (opens in new tab)"><i
-                                            class="fa-brands fa-facebook"></i></a></td>
-                                <td><a href="https://www.instagram.com/" target="_blank"
-                                        aria-label="Link to Instagram (opens in new tab)"><i
-                                            class="fa-brands fa-instagram"></i></a></td>
-                            </tr>
-                        </table>
-                    </nav>
-                </ul>
-            </label>
-        </div>
-        <div>
-            <p class="main">Some of Dr Asimov's books has been made into movies and/or television shows. Some better
+            <p>Some of Dr Asimov's books has been made into movies and/or television shows. Some better
                 than others...and not many considering his enormous productivity.</p><br>
-            <div class="main">
+            <div class="div-center">
                 <ol class="ol-roman">
                     <li>Bicentennial Man</li>
                     <li>The End of Eternity (not part of this timeline)</li>
@@ -114,18 +105,14 @@
                     <li>Robots</li>
                 </ol>
             </div>
-
             <br>
-            <div class="main">
-                The most recent effort is a TV-series based on the Foundation novels (can be streamed on AppleTV).
+            <p>The most recent effort is a TV-series based on the Foundation novels (can be streamed on AppleTV).
                 Currently only one season, but a season two is supposedly on its way.
                 <br>The show takes quite a few liberties with the source material though. The trailer for season one can
-                be viewed below. <br>
-            </div>
+                be viewed below. </p><br>
 
-            <div class="main">
+            <div>
                 <!-- https://maxl.us/hide-related -->
-
                 <div class="hytPlayerWrapOuter">
                     <div class="hytPlayerWrap" id="no-iframe-border"> <iframe width="640" height="360"
                             src="https://www.youtube.com/embed/X4QYV5GTz7c?rel=0&enablejsapi=1"></iframe></div>
@@ -183,36 +170,43 @@
                     As the name suggests, I found it when researching how to hide related videos
                     at the end of the playback. So, credit to the author!
                 -->
+                <label>
+                    <input type="checkbox" hidden>
+                    <span class="menu"> <span class="hamburger"></span></span>
+
+                    <ul>
+                        <nav id="hide-menu">
+                            <!-- should not be seen when screen > 600 -->
+                            <a href="index.html" aria-label="Return to startpage">About</a>
+                            <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
+                            <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
+                            <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
+                            <a href="media.html" aria-label="Go to media page">Media</a>
+                            <a href="contact.html" aria-label="Go to contact page">Contact</a>
+                            <hr class="hor-row-nav">
+                            <table>
+                                <tr>
+                                    <td><a href="https://twitter.com/home?lang=en" target="_blank"
+                                            aria-label="Link to twitter (opens in new tab)"><i
+                                                class="fa-brands fa-twitter"></i></a>
+                                    </td>
+                                    <td><a href="https://www.facebook.com/" target="_blank"
+                                            aria-label="Link to facebook (opens in new tab)"><i
+                                                class="fa-brands fa-facebook"></i></a></td>
+                                    <td><a href="https://www.instagram.com/" target="_blank"
+                                            aria-label="Link to Instagram (opens in new tab)"><i
+                                                class="fa-brands fa-instagram"></i></a></td>
+                                </tr>
+                            </table>
+                        </nav>
+                    </ul>
+                </label>
             </div>
-        </div>
-        <div class="sidenav" id="side-nav">
-            <nav>
-                <a href="index.html" aria-label="Go to start page">About</a>
-                <a href="bibliography.html" aria-label="Go to bibliography page">Bibliography</a>
-                <a href="timeline.html" aria-label="Go to timeline page">Timeline</a>
-                <a href="quotes.html" aria-label="Go to quotes page">Quotes</a>
-                <a href="media.html" class="active" aria-label="Go to media page">Media</a>
-                <a href="contact.html" aria-label="Go to contact page">Contact</a>
-                <hr class="hor-row-nav">
-                <table>
-                    <tr>
-                        <td><a href="https://twitter.com/home?lang=en" target="_blank"
-                                aria-label="Link to twitter (opens in new tab)"><i class="fa-brands fa-twitter"></i></a>
-                        </td>
-                        <td><a href="https://www.facebook.com/" target="_blank"
-                                aria-label="Link to facebook (opens in new tab)"><i
-                                    class="fa-brands fa-facebook"></i></a></td>
-                        <td><a href="https://www.instagram.com/" target="_blank"
-                                aria-label="Link to Instagram (opens in new tab)"><i
-                                    class="fa-brands fa-instagram"></i></a></td>
-                    </tr>
-                </table>
-            </nav>
-        </div>
 
-        <!-- font awsome -->
+            <!-- font awsome -->
 
-        <script src="https://kit.fontawesome.com/9a55b16a72.js" crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/9a55b16a72.js" crossorigin="anonymous"></script>
+        </div>
     </div>
 </body>
 

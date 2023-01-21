@@ -136,7 +136,7 @@ header h2 {
   width:auto;
   position: fixed;
   top: 60px;
-  left: 0;
+  left: 10px;
   overflow-x: hidden;
   padding-top: 0px;
   background-image: url("../pictures/starfield.jpg");
@@ -302,14 +302,14 @@ ul li {
   list-style-type: "→"; 
 } 
 
-
 .ol-roman {
   /* styles the list on media page. This class is only used there */
-  list-style-type: upper-roman;
   color: wheat;
-  margin-left: 200px;
-  /* Same as the width of the sidebar */
-  padding: 10px;
+  font-size: larger;
+  line-height: 1.5;
+  list-style-type: upper-roman;
+  margin-left: 20px;
+  padding: 0px 20px;
 }
 
 #timeline-table,

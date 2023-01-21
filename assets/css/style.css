@@ -253,6 +253,7 @@ input {
 }
 
 .return-button {
+  /* return-button is used on the thankyou.html file only */
   border: 2px;
   padding: 15px 32px;
   text-align: center;
@@ -300,8 +301,11 @@ caption {
 }
 
 ul li {
-  /* styles the list on quotes page. <ul> is only used there. */
-  color: wheat;
+  /* styles the list on quotes page. <ul> is only used there.
+  Well, on the parts of the code I wrote. I noticed it is also
+  used on the hamburger menu to style the links, but since I thought
+  this way of indicating the links works good there I left it at that */
+  color: wheat; 
   font-size: larger;
   line-height: 1.5;
   margin-left: 20px;

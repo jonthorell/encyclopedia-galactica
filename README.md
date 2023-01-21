@@ -1,13 +1,15 @@
 # Enyclopedia Galactica
-Readme file for the Encyclopedia Galactica project at Code Institute.
-
 Despite the title, the project aim is nowhere near creating an online encyclopedia.
 
 The aim is to pay tribute to my favorite author, Isaac Asimov, and his set of novels set in the so-called Foundation universe. A fictional future society. The title reflects that since the novels have an "Encyclopedia Galactica" in the background.
 
 The site is targeted at "newbies" in the Asimovian universe that wants an overview and/or accssible timeline of the rather long series of books (including books by other authors set in the same universe). There will also be some additonal material such as an intro-page, a bibliography, a contact form, and some information about adapations into other media.
 
-The site is entirely written in pure html/css.
+The site is entirely written in pure html/css, and can be seen live 
+[here](https://jonthorell.github.io/encyclopedia-galactica/)
+.
+
+![mockup-picture](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/multi-website-mockup.png?raw=true)
 
 # Features
 For now the site consists of 6 pages. At the top of the page a banner will always be there to make sure there is no mistaking what site you're on as well as showing copyright information. On the left-hand side there will always be a navigation bar with links to the other parts of the site (and highlighting which you're currently on) as well as links to social media. Both will adapt to different resolutions.
@@ -18,7 +20,7 @@ For additonal clarity for newbies, "pop-outs" has been enabled so you get at ">"
 
 ## About
 Provides some introductory text and background to the purpose of the site.
-![about-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/about.PNG)
+![about-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/about.PNG?raw=true)
 ## Bibliography
 Provides the canonical set of novels that Isaac Asimov himself wrote as a part of this future
 timeline. This provides a set of must-read novels to make sense of the timeline.

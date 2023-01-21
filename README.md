@@ -36,6 +36,7 @@ timeline. This provides a set of must-read novels to make sense of the timeline.
 ## Timeline
 A more-or-less complete timeline. It can be expanded quite a lot, but the general timeline is there. This is the meat of the project
 and is what gives both casual and long-time fans of the series a very thorough explantion of the major events of the future history.
+As can be seen, there are parts marked with a ">" sign. That can be clicked to reveal further information.
 
 ![timeline-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/timeline.PNG?raw=true)
 ## Quotes
@@ -87,14 +88,25 @@ Layout has been checked on built-in screen of laptop 1920x1080, on the external 
 
 Now after the bugs have been squashed the site responds to different screen-sizes as intended and no errors as far as I can see when it comes to stretched images, overflow issues, nor elements stacked on top of eachother.
 
+## Functional testing
+
+### Links
+All links has been clicked to make sure they take you where they are supposed to, both internally to the site (navbar and internally within primarily the timeline page where there are id-anchors present) was well as to wikipedia, twitter, and so on. WIth or without target="_blank".
+
+### Form
+
+There is only one form. On the contact-page. As of now, it is not doing anything. It just re-directs the user to thankyou.html with a generic thank-you message with no feedback on what you had entered in the form. However, during development another page was used that did provide that feedback. It was used for debugging-purposes to make sure the correct data was sent to the server. The code is still there (commenteded out) in the contact-form if one wants to take a look.
+
+Some of the fields in the form are set to be of a required type and that they can not be empty. That can still be checked even with the generic thankyou.html used as the "active" part. It is impossible to get to it if you leave the name blank, does not provide a valid e-mail (well, one that conforms to the standard user@domain.com format at any rate), or clicks one of the radio-buttons. Works as intended in other words.
+
 # File names and hierarchy
-All file-names are consistently in lower-case and with the appropiate extension (usually .html or .css)
+All file-names are consistently in lower-case and with the appropiate extension (with the exception of pictures, either .html or .css)
 The html-files are in the root-folder
 The external files are all located in the assets subfolder. In there you have the folders css, OLD, and pictures.
 OLD is not really used. It is there as a "backup" before a hamburger-menu was added so the assessors can see (if they choose to) what the code looked like before I added code that was not my own.
 The css-folder contains three files.
-1. Style.css is referenced by all html-files
-2. Hamburger.css is also referenced by all html-files.
+1. style.css is referenced by all html-files
+2. hamburger.css is also referenced by all html-files.
 3. The reason for this is to separate code by me (style.css) from those by another (hamburger.css). Credits are included in the files.
 4. player.css is only used in media.html so separated from the main style.css for the same reason as #3, and also to avoid potential name-clashes.
 
@@ -117,18 +129,23 @@ Not a bug, but something I think needs to be explained. In style.css you can fin
 It might look odd. Why not just use a class instead? At first I used the id-idea to see that I got the style to apply exactly where I wanted it to. Then I thought: why not keep it like that in case I want to style the different parts differently? I ended up not doing that, but the flexibility remains there should I want to change it.
 
 # Bugs encountered and fixed
-The navigation bar kinda destroyed the layout in lower resolutions. Was fixed by using a hamburger-menu when screensize is 600px and lower. When in those resolutions, the sidenav is hidden from view. NOTE: my knowledge of css is not yet good enough to do that part on my own so the code for that is borrowed and adjusted to suit my site. More details are available in comments in the css-file. Everything regarding css that relates to the hamburger-menu is in the hamburger.css file, to clearly separate my code from someone elses.
 
-The contrast in the bibliography and timeline-pages made it hard to read the text. Fixed by both styling the links-colors to something else as well as adding a intermediary semi-passthru layer between the background image and the table.
+1. The navigation bar kinda destroyed the layout in lower resolutions. Was fixed by using a hamburger-menu when screensize is 800px and lower. When in those resolutions, the sidenav and the lefthand column is hidden from view. NOTE: my knowledge of css is not yet good enough to do that part on my own so the code for that is borrowed and adjusted to suit my site. More details are available in comments in the css-file. Everything regarding css that relates to the hamburger-menu is in the hamburger.css file, to clearly separate my code from someone elses.
 
-The layer mentioned aboved is styled differently on bibliography and timeline. The reason is that the red border used on bibliography suits that page since the two boxes are kinda the opposites of one-another. On the timeline-page though the red border would distract from the flow of the page.
+2. The contrast in the bibliography and timeline-pages made it hard to read the text. Fixed by both styling the links-colors to something else as well as adding a intermediary semi-passthru layer between the background image and the table.
 
-The menu-text at the top of every-page was obscured partially by the top-bar. Fixed by some additional padding (the "About" on the start-page for example). It could have been resolved by removing the text altogether but I found it best to leave it there. That's because the sidebar is removed in lower resolutions so it's not immediately obvious where you are on the site without that piece of text.
+3. Not a bug per se, but a layout issue. The layer mentioned aboved is styled differently on bibliography and timeline. The reason is that the red border used on bibliography suits that page since the two boxes are kinda the opposites of one-another. On the timeline-page though the red border would distract from the flow of the page. The same style could have been used, I just felt it was better to make some adjustments.
 
-The layout was often changing in size which made the site hard to work with. Fixed by adding a div that encompasses the whole page and then applies a width: of 100% to its class. That and additional divs and classes to divide the page
-into two columns with some set width and heights in % there as well as some additonal styling for img-elements so they sclae better. The test.html shows the the layout without any distracting extra material. The new column-approach has been added to index.html, bibliography.html and the rest will follow.
+4. The menu-text at the top of every-page was obscured partially by the top-bar. Fixed by some additional padding (the "About" on the start-page for example). It could have been resolved by removing the text altogether but I found it best to leave it there. That's because the sidebar is removed in lower resolutions so it's not immediately obvious where you are on the site without that piece of text.
 
-The timeline-page borders on information overload. Fixed by adding "details" & "summary" tag popouts to provide further information where necessary (and styled differently so the popout text stands out). I also added a special style in the menubar-tables to indicate clearer which part of the page you're on. In the same manner as the sidebar links, i.e. using a active-class.
+5. The layout was often changing in size (meaning: the responiveness was not perfect) which made the site hard to work with. First fix was by adding a div that encompasses the whole page and then applies a width: of 100% to its class. 
+That was not enough though. It needed a re-factoring of the layout. The main part of the page is now always in two strict colums. One left-hand side (a div, 20% in width) containing the navbar. Another div on the right, 80% in width-size.
+A no-frills test.html exist to show the basic layout after the re-factoring.
+
+6. The timeline-page borders on information overload. Fixed by adding "details" & "summary" tag popouts to provide further information where necessary (and styled differently so the popout text stands out). I also added a special style in the menubar-tables to indicate clearer which part of the page you're on. In the same manner as the sidebar links, i.e. using a active-class.
+
+Here it can be see what the expand means:
+
 
 The media-page uses an additional included css-file. That's because that pages uses some code from an external source and I wanted to avoid potential name-clashes on pages where those additional classes would not be in use. Not to mention, to make it clear what code was written by me and which was adapted/used from other sources. In the same vein as the hamburger menu that is. So every html-file uses at least two css-files: style.css and hamburger.css. One uses three. Details included in the respective css-file.
 
@@ -147,7 +164,7 @@ Lighthouse warned about forgotten aria-label tags, added.
 Validation on media.html complained about a deprecation option to iframe and that css should be used instead. The code was borrowed (and properly credited), but I decided to redo it in css instead of the old-fashioned way.
 See id #no-iframe-border in style.css.
 
-## Bugs yet unfixed
+# Bugs yet unfixed
 
 Timeline page
 
@@ -157,11 +174,13 @@ The main-table with the events is not resized the same way as the menu-tables wh
 be equal in size horizontally. This was caused by the tags not being closed in the proper order as found by the validator.
 When tags had been closed properly the tables aligned correctly horizontally, although instead being pushed underneath the sidenav. Probably due to the wrong classes.
 
-## Validation
+# Validation
 
 Every html-page has been validated as has the css-files. 
 
-* HTML. All files were validated using [v3 validator](https://validator.w3.org/)
+## HTML
+
+All files were validated using [v3 validator](https://validator.w3.org/)
 All together 8 files, 7 being in use on the site and one test file.
 
 ![index.html](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/html-validation/html-index-result.PNG?raw=true)
@@ -174,12 +193,12 @@ All together 8 files, 7 being in use on the site and one test file.
 
 A few notes on those images. As can be seen, it is the same error in all of them. The "offending" code comes from the hamburger-menu code I borrowed and adapted for this site.
 Unfortunately, I did not notice the problem early enough or I might have been able to find a solution to the issue. As it is, there are two options:
-* Remove the offending code. Which, unfortunately, will make the responsiveness of the site to suffer.
-* Leave it as-is for now.
+    * Remove the offending code. Which, unfortunately, will make the responsiveness of the site to suffer.
+    * Leave it as-is for now.
 
 The code works, even though with an error from the validator, so I opted to leave it for now. Not optimal so something to add to the to-do list.
 
-Compare it with index2.html. The same as index.html except that the hamburger-menu code has been removed.
+Compare it with index2.html. The same as index.html except that the hamburger-menu code has been removed (this is the test-file mentioned).
 
 ![index2.html](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/html-validation/html-index2-result.PNG?raw=true)
 
@@ -190,23 +209,20 @@ The reason for that is: the online-checker with URL is not trustworthy.
 My site has been deployed to github pages. BUT when I tried to use a URL from there to validate against I got a lot more errors regarding classes and mismatched tags for things I have not written or even seen.
 It seems the URL input functionality of the validator drags in additonal css/html files that are unrelated to my project.
 
-See the following screenshot:
+Or rather: it did that on first try. Now it seems to mostly work as intended. It could not access my bibliography.html page so I still do not trust it. The erros and what not that are relevant are the same though so it should not matter.
+The html-files that I did upload to the validor are included as they were at the time in the html.zip file.
 
 
+## CSS
 
-index.html, bibliography.html, timeline.html, quotes.html, media.html, contact.html
+All files were validated using
 
-Line 37,42,39, 41, 77, 43: Element ul not allowed as child of element label in this context. (Suppressing further errors from this subtree.)
+[jigsaw](https://jigsaw.w3.org/css-validator/)
 
-Not sure why. The code seems to work, although admittedly the context is in code not by me.
+Currently offline.
 
-Some cases where the tags were not closed in the proper order that was identified. And fixed.
 
-CSS: No errors found
-
-The various pages has also been checked in lighthouse, and been adjusted according to the warnings the various tools provided.
-
-## Credits
+# Credits
 
 Images found using google-image-search (more precise locations and/or credits can be provided if necessary, although I can not be sure that the site I found the images on are authorative).
 

@@ -81,7 +81,11 @@ The source is hosted on github and deployed using git pages and the commands:
 * git push
 
 # Testing
+
+## Responsiveness
 Layout has been checked on built-in screen of laptop 1920x1080, on the external display (2560x1440) in Chrome and Edge as well as some "simulated" sizes using devtools. Some problems did not show up on the external display (or the simulated sizes for that matter) but when used on the built-in screen the problems showed up. Most were rather superficial in nature and could easily be resolved. Some by enclosing it in an additional div-tag properly styled by css, some because the responsiveness was broken because of syntax errors, incorrectly targeting the wrong class or id, and the like. Details follows in the list of bugs encountered. One had me stumped for quite a while though. In lower resolutions, text tended to get cut of and not everything would be displayed.
+
+Now after the bugs have been squashed the site responds to different screen-sizes as intended and no errors as far as I can see when it comes to stretched images, overflow issues, nor elements stacked on top of eachother.
 
 # File names and hierarchy
 All file-names are consistently in lower-case and with the appropiate extension (usually .html or .css)
@@ -156,6 +160,14 @@ When tags had been closed properly the tables aligned correctly horizontally, al
 ## Validation
 
 Every html-page has been validated as has the css-files. 
+
+* HTML. All files were validated using [v3 validator](https://validator.w3.org/)
+All together 7 files, 6 being in use on the site and one test file.
+
+![index.html](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/html-validation/html-index-result.PNG?raw=true)
+![bibliography.html](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/html-validation/html-bibliography-result.PNG?raw=true)
+![timeline]()
+
 
 index.html, bibliography.html, timeline.html, quotes.html, media.html, contact.html
 

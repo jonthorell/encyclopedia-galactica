@@ -146,6 +146,11 @@ A no-frills test.html exist to show the basic layout after the re-factoring.
 
 Here it can be see what the expand means:
 
+![expand](https://raw.githubusercontent.com/jonthorell/encyclopedia-galactica/ecc57ac2d4af34e65e550e3978f1d7fc21a6d53c/assets/readme-files/html-validation/expand.PNG)
+
+And the addtional styling:
+
+![table-styling]()
 
 The media-page uses an additional included css-file. That's because that pages uses some code from an external source and I wanted to avoid potential name-clashes on pages where those additional classes would not be in use. Not to mention, to make it clear what code was written by me and which was adapted/used from other sources. In the same vein as the hamburger menu that is. So every html-file uses at least two css-files: style.css and hamburger.css. One uses three. Details included in the respective css-file.
 

@@ -8,8 +8,7 @@
     Is in its own css-file to clearly separate my code from someone elses.
     */
   
-  
-  
+
     *,
     *:before,
     *:after {
@@ -25,6 +24,7 @@
       font-size: 1.2em;
       line-height: 1.6;
       overflow-x: hidden;
+      overflow-y: hidden;
     }
   
     label .menu {

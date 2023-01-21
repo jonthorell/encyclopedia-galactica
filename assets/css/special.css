@@ -1,10 +1,21 @@
-/* this css file is only used to show the column approach in test.html */
+/* this css file is only used to show the column approach in test.html
+It is only used for testing purposes that is */
 
 * {
   /* initial style for everything. Will be overridden where need be */
   border: none;
   margin: 0;
   padding: 0;
+}
+
+#published {
+
+  /* used to style the published by info. Will be removed on lower resolutions */
+  color:white;
+  text-align: justify;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: xx-small;
 }
 
 body {
@@ -49,7 +60,7 @@ h1 {
   
   .split1 {
     height: 90%;
-    width: 10%;
+    width: 20%;
     position: fixed;
     z-index: 1;
     top: 60px;
@@ -58,7 +69,7 @@ h1 {
   
   .split2 {
     height: 90%;
-    width: 90%;
+    width: 80%;
     position: fixed;
     z-index: 1;
     top: 60px;

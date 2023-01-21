@@ -18,11 +18,10 @@
     <header>
         <a href="index.html" aria-label="Return to startpage"><img src="assets/pictures/azimov.png" alt="Isaac Asimov"
                 id="isac-face" width="100" height="118"></a>
-        <h1 id="encyc-header">the encyclopedia galactica</h1>
-        <h2 id="published">(as published by the Encyclopedia Galactica Publishing Company, 116th Edition,
-            published 1020 F.E)
-            (c)
-            The 'It Works On My System Group', Ltd. 2022-2023</h2>
+        <p id="encyc-header">the encyclopedia galactica</p>
+        <p id="published">(as published by the Encyclopedia Galactica Publishing Company, 116th Edition, published
+            1020 F.E) (c)
+            The 'It Works On My System Group', Ltd. 2022-2023</p>
     </header>
 
     <div id="main-id">
@@ -67,13 +66,13 @@
                     <input type="text" name="name" id="name" required>
                     <br><br><label for="email">Your E-mail</label>
                     <input type="email" name="email" id="email" required>
-                    <br><br>Had you heard of Dr Asimov before?<br>
+                    <p><br>Had you heard of Dr Asimov before?<br></p>
                     <input type="radio" id="yes" name="heard_before" value="yes" required>
                     <label for="yes">Of course!</label>
                     <input type="radio" id="no" name="heard_before" value="no" required>
                     <label for="no">I'm not a sci-fi geek, you moron!</label>
-                    <br><br><label for="fb" class="input-sizer">Anything you think could be improved?</label>
-                    <br><textarea oninput="this.parentNode.dataset.value = this.value" placeholder="hi" cols="80"
+                    <br><br><label for="fb">Anything you think could be improved?</label>
+                    <br><textarea placeholder="Enter suggestions for improvement here" cols="80"
                         rows="20" id="fb" name="fb">Enter suggestions for improvement here</textarea>
                     <br><br><button type="reset" class="black-button"><strong>Reset form</strong></button>
                     <button type="submit" class="black-button"><strong>Submit!</strong></button>

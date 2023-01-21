@@ -5,10 +5,24 @@
   padding: 0;
 }
 
+#published {
+
+  /* used to style the published by info. Will be removed on lower resolutions */
+  color:white;
+  text-align: justify;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: xx-small;
+}
+
 /* used to get the main title to adjust size according to screen-size. A bit clumsy, but the only method I could think of. Probably not perfect either, but seems to work. */
 
 #encyc-header {
   font-size: 24px;
+  color:white;
+  text-align: justify;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 @media screen and (max-width: 720px) {
@@ -50,25 +64,6 @@ body {
 .mylink {
   background-color: red;
   text-decoration: double;
-}
-
-header h1 {
-  /* h1 in the top-header */
-  text-align: justify;
-  text-transform: capitalize;
-  color: white;
-}
-
-header h1,
-h2 {
-  /* headers in top bar */
-  color: white;
-  text-align: center;
-}
-
-header h2 {
-  /* decrease the font-size of h2 in header */
-  font-size: xx-small;
 }
 
 #isac-face {
@@ -204,7 +199,6 @@ td {
   color: aqua;
   padding-top: 60px;
   text-align: center;
-  text-decoration: underline;
   font-size: xx-large;
 }
 
@@ -372,7 +366,6 @@ ul li {
 .links-table a:link,
 a:visited {
   color: wheat;
-  text-decoration: double;
 }
 
 .active-timeline {

@@ -48,12 +48,42 @@ Some information on other media Asimov's novels has been converted into. This, t
 Provides a contact-form if the user wants to get in touch with the site-owner with feedback. It doesn't really send anything anywhere, but a website with no form of user-interaction is almost no website at all.
 The data entered is validated for errors (such as an empty name field), and sends the user to a thank-you page. It has been validated that the correct data is sent using a test-form, but for now it is better to
 just use a basic thank-you page themed the same way as the rest of the site.
+
+The form consists of:
+* Name (type text, required)
+* E-mail (type email, required)
+* Question if the user had heard of Isaac Asimov before or not (type radio, required)
+* Improvement suggestions (type textarea, not required)
+* A clear-form button (button type, reset)
+* A submit-button (button type, submit)
+
 ![contact-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/contact.PNG?raw=true)
 
-![thank-you page]()
-## Testing
-Layout has been checked on built-in screen of laptop 1920x1080, on the external display (2560x1440) in Chrome and Edge as well as some "simulated" sizes using devtools. Some problems did not show up on the external display (or the simulated sizes for that matter) but when used on the built-in screen the problems showed up. They were rather superficial in nature and could easily be resolved. Some by enclosing it in an additional div-tag properly styled by css, some because the responsiveness was broken because of syntax errors and the like. Details follows in the list of bugs encountered.
-## File names and hierarchy
+![thank-you page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/thank-you.PNG?raw=true)
+
+# Technologies used
+
+* HTML (for validation results, see further down) was used for the structure of the website.
+* CSS (for validation results, see further down) was used (in external css-files for the most part. More details under filenames further down) to style the site.
+* Gitpod as IDE. Sometimes with notepad++ on the side to easier see several areas of the code simultaneously.
+* Git from inside gitpod and Github for deployment. 
+* GIMP for some basic image-resizing
+* Font awsome for social-media images as well as the thumbs-up and thumbs-down icons used on the timeline page.
+
+# Deployment
+
+All code was entered into its respective file from within Gitpod. 
+
+The source is hosted on github and deployed using git pages and the commands:
+
+* git add .
+* git commit -m "Commit message"
+* git push
+
+# Testing
+Layout has been checked on built-in screen of laptop 1920x1080, on the external display (2560x1440) in Chrome and Edge as well as some "simulated" sizes using devtools. Some problems did not show up on the external display (or the simulated sizes for that matter) but when used on the built-in screen the problems showed up. Most were rather superficial in nature and could easily be resolved. Some by enclosing it in an additional div-tag properly styled by css, some because the responsiveness was broken because of syntax errors, incorrectly targeting the wrong class or id, and the like. Details follows in the list of bugs encountered. One had me stumped for quite a while though. In lower resolutions, text tended to get cut of and not everything would be displayed.
+
+# File names and hierarchy
 All file-names are consistently in lower-case and with the appropiate extension (usually .html or .css)
 The html-files are in the root-folder
 The external files are all located in the assets subfolder. In there you have the folders css, OLD, and pictures.
@@ -63,6 +93,25 @@ The css-folder contains three files.
 2. Hamburger.css is also referenced by all html-files.
 3. The reason for this is to separate code by me (style.css) from those by another (hamburger.css). Credits are included in the files.
 4. player.css is only used in media.html so separated from the main style.css for the same reason as #3, and also to avoid potential name-clashes.
+
+# Comments on css
+
+Not a bug, but something I think needs to be explained. In style.css you can find this:
+
+```css
+#timeline-table,
+#timeline-table2,
+#timeline-table3,
+#timeline-table4 {
+  /* styles the different "era" tables on timeline page */
+  border: 1px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+```
+It might look odd. Why not just use a class instead? At first I used the id-idea to see that I got the style to apply exactly where I wanted it to. Then I thought: why not keep it like that in case I want to style the different parts differently? I ended up not doing that, but the flexibility remains there should I want to change it.
+
 # Bugs encountered and fixed
 The navigation bar kinda destroyed the layout in lower resolutions. Was fixed by using a hamburger-menu when screensize is 600px and lower. When in those resolutions, the sidenav is hidden from view. NOTE: my knowledge of css is not yet good enough to do that part on my own so the code for that is borrowed and adjusted to suit my site. More details are available in comments in the css-file. Everything regarding css that relates to the hamburger-menu is in the hamburger.css file, to clearly separate my code from someone elses.
 
@@ -79,9 +128,7 @@ The timeline-page borders on information overload. Fixed by adding "details" & "
 
 The media-page uses an additional included css-file. That's because that pages uses some code from an external source and I wanted to avoid potential name-clashes on pages where those additional classes would not be in use. Not to mention, to make it clear what code was written by me and which was adapted/used from other sources. In the same vein as the hamburger menu that is. So every html-file uses at least two css-files: style.css and hamburger.css. One uses three. Details included in the respective css-file.
 
-The css for "#timeline-table, #timeline-table2, #timeline-table3, #timeline-table4"
 
-might look odd. Why not just use a class instead? At first I used the id-idea to see that I got the style to apply exactly where I wanted it to. Then I thought: why not keep it like that in case I want to style the different parts differently? I ended up not doing that, but the flexibility is there should I want to change it.
 
 The theming for the hamburger-menu looked wrong when page has more info than the test-page (when it was themed to use the same starfield-background as the rest of the pages that is). Removed the background-image to rectify. The test-page is still a part of the project for testing-purposes but is not linked anywhere.
 

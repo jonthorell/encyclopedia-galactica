@@ -41,13 +41,21 @@ A more-or-less complete timeline. It can be expanded quite a lot, but the genera
 and is what gives both casual and long-time fans of the series a very thorough explantion of the major events of the future history.
 As can be seen, there are parts marked with a ">" sign. That can be clicked to reveal further information.
 
+Like this:
+
+![foldout](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/foldout.PNG?raw=true)
+
 ![timeline-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/timeline.PNG?raw=true)
+
 ## Quotes
 A list of some more or less, in my view, funny quotes from Dr Asimov. This is basically to just add some humor to the site. See also the entry below.
 ![quotes-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/quotes.PNG?raw=true)
+
 ## Media
 Some information on other media Asimov's novels has been converted into. This, together with the quote-page, was added to the project to make the project seem like a complete website and not sort-of disjointed.
+
 ![media-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/media.png?raw=true)
+
 ## Contact
 Provides a contact-form if the user wants to get in touch with the site-owner with feedback. It doesn't really send anything anywhere, but a website with no form of user-interaction is almost no website at all.
 The data entered is validated for errors (such as an empty name field), and sends the user to a thank-you page. It has been validated that the correct data is sent using a test-form, but for now it is better to
@@ -63,7 +71,10 @@ The form consists of:
 
 ![contact-page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/contact.PNG?raw=true)
 
+
+
 ![thank-you page](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/thank-you.PNG?raw=true)
+
 
 # Technologies used
 

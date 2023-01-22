@@ -251,12 +251,32 @@ All files were validated using
 
 [jigsaw](https://jigsaw.w3.org/css-validator/)
 
-Currently offline.
+Currently offline. Earlier versions of the files were validated as 100% correct, but I did not take screenshots then since it was still very much a work-in-progress. As of now I can not get new results.
+
+## Lighthouse
+
+All pages have been run through lighthouse with similar results. To begin with, the settings used were:
+
+![settings](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/default.PNG?raw=true)
+
+Here are the reports, and some comments below.
+
+![index](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/index.PNG?raw=true)
+![bilbiography](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/bibliography.PNG?raw=true)
+![timeline](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/timeline.PNG?raw=true)
+![quotes](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/quotes.PNG?raw=true)
+![media](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/media.PNG?raw=true)
+![contact](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/contact.PNG?raw=true)
+[thankyou](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/thankyou.PNG?raw=true)
+
+First off, I do not pay much attention to the performance score since it fluctuates a little but has never dropped below 98%. And a lot of the tips lighthouse has provided in how to improve that value are things I have little to no control over since I do not
+control the webserver as such.
 
 # To-do
 
 1. Fix the bug regarding the hamburger-menu so all files are considered error-free as far as the validator goes.
 2. Create a proper submit-script so the data is actually sent somewhere as well as making the thankyou.html able to acknowledge the data that was sent.
+3. Improve the color-contrast
 
 # Credits
 

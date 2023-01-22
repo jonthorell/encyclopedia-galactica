@@ -98,14 +98,14 @@ The source is hosted on github and deployed using git pages and the commands:
 # Testing
 
 ## Responsiveness
-Layout has been checked on built-in screen of laptop 1920x1080, on the external display (2560x1440) in Chrome and Edge as well as some "simulated" sizes using devtools. Some problems did not show up on the external display (or the simulated sizes for that matter) but when used on the built-in screen the problems showed up. Most were rather superficial in nature and could easily be resolved. Some by enclosing it in an additional div-tag properly styled by css, some because the responsiveness was broken because of syntax errors, incorrectly targeting the wrong class or id, and the like. Details follows in the list of bugs encountered. One had me stumped for quite a while though. In lower resolutions, text tended to get cut of and not everything would be displayed.
+Layout has been checked on built-in screen of laptop 1920x1080, on the external display (2560x1440) in Chrome and Edge as well as some "simulated" sizes using devtools. Some problems did not show up on the external display (or the simulated sizes for that matter) but when used on the built-in screen the problems showed up. Most were rather superficial in nature and could easily be resolved. Some by enclosing it in an additional div-tag properly styled by css, some because the responsiveness was broken because of syntax errors, incorrectly targeting the wrong class or id, and the like. Details follows in the list of bugs encountered. One had me stumped for quite a while though. In lower resolutions, text tended to get cut of at the right-hand side and not everything would be displayed.
 
 Now after the bugs have been squashed the site responds to different screen-sizes as intended and no errors as far as I can see when it comes to stretched images, overflow issues, nor elements stacked on top of eachother.
 
 ## Functional testing
 
 ### Links
-All links has been clicked to make sure they take you where they are supposed to, both internally to the site (navbar and internally within primarily the timeline page where there are id-anchors present) was well as to wikipedia, twitter, and so on. WIth or without target="_blank".
+All links has been clicked to make sure they take you where they are supposed to, both internally to the site (navbar and internally within primarily the timeline page where there are id-anchors present) was well as to wikipedia, twitter, and so on. With or without target="_blank".
 
 ### Form
 
@@ -164,34 +164,45 @@ Here it can be see what the expand means:
 
 And the addtional styling:
 
-![table-styling]()
+![table-styling](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/styling-table.PNG?raw=true)
 
-The media-page uses an additional included css-file. That's because that pages uses some code from an external source and I wanted to avoid potential name-clashes on pages where those additional classes would not be in use. Not to mention, to make it clear what code was written by me and which was adapted/used from other sources. In the same vein as the hamburger menu that is. So every html-file uses at least two css-files: style.css and hamburger.css. One uses three. Details included in the respective css-file.
+7. Not really a bug per se, but an explanation. The media-page uses an additional included css-file. That's because that pages uses some code from an external source and I wanted to avoid potential name-clashes on pages where those additional classes would not be in use. Not to mention, to make it clear what code was written by me and which was adapted/used from other sources. In the same vein as the hamburger menu that is. So every html-file uses at least two css-files: style.css and hamburger.css. One uses three. Details included in the respective css-file.
 
+8. The theming for the hamburger-menu looked wrong when page has more info than the test-page (when it was themed to use the same starfield-background as the rest of the pages that is). It had been styled with the same stars background image as the rest of the site, but that made the links next to impossible to read no matter what font color used. Removed the background-image to rectify. (The test-page is still a part of the project for testing-purposes but is not linked anywhere).
 
+9. The title-text flowed out of the title-bar at lower resolutions. 
 
-The theming for the hamburger-menu looked wrong when page has more info than the test-page (when it was themed to use the same starfield-background as the rest of the pages that is). Removed the background-image to rectify. The test-page is still a part of the project for testing-purposes but is not linked anywhere.
+![title-bar](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/topbar.PNG?raw=true)
 
-The title-text flows out of the title-bar at lower resolutions. Fixed by some media-queries and altering the font-size of h1. Might be a better way of doing it, but probably involves some javascripting. It seems to work though. The h2 suffered from a similar thing and a media-query that hides it when the resolution is less than 800px wide fixes the problem there.
+Fixed by some media-queries and altering the font-size of the top line. Might be a better way of doing it, but probably involves some javascripting. It seems to work though. 
+The second line suffered from a similar thing and a media-query that hides it when the resolution is less than 800px wide fixes the problem there.
 
-When resizing the browser-window, images can end up partially covered by the side-bar. An additional div plus removing the sidebar and the left-hand column using diplay:none fixed that problem.
+10. When resizing the browser-window, images could end up partially covered by the side-bar. 
+An additional div, removing the sidebar and the left-hand column using diplay:none plus refactoring the entire code into fixed (in percentage) into two columns fixed that problem and responsiveness issues in general.
+The test-page used to come up with how the code should look to implement two columns can be found here:
 
-Lighthouse warned about missing width= and height= values in img src. Added.
+[test-page](https://jonthorell.github.io/encyclopedia-galactica/test.html)
 
-Lighthouse warned about forgotten aria-label tags, added.
+11. The two columns do not cover all screen-estate in height on purpose. The bottom part was left out as a fix to an annoying bug: the end of the body-tag was cut off and it could not be scrolled down to reveal it no matter what the overflow: settings were set to.
 
-Validation on media.html complained about a deprecation option to iframe and that css should be used instead. The code was borrowed (and properly credited), but I decided to redo it in css instead of the old-fashioned way.
+12. Lighthouse warned about missing width= and height= values in img src. Added.
+
+13. Lighthouse warned about forgotten aria-label tags, added.
+
+14. Validation on media.html complained about a deprecation option to iframe and that css should be used instead. The code was borrowed (and properly credited), but I decided to redo it in css instead of the old-fashioned way.
 See id #no-iframe-border in style.css.
 
-# Bugs yet unfixed
-
-Timeline page
+15. The main-table with the events is not resized the same way as the menu-tables when the resolution changes. So the page can end up looking like below, which is not how it is supposed to look. The two tables should always
+be equal in size horizontally. This was caused by the tags not being closed in the proper order as found by the validator.
+When tags had been closed properly the tables aligned correctly horizontally, although instead being pushed underneath the sidenav. The refactoring into two-column mode fixed that problem.
 
 ![error-resize](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/resize-error.PNG?raw=true)
 
-The main-table with the events is not resized the same way as the menu-tables when the resolution changes. So the page can end up looking like above, which is not how it is supposed to look. The two tables should always
-be equal in size horizontally. This was caused by the tags not being closed in the proper order as found by the validator.
-When tags had been closed properly the tables aligned correctly horizontally, although instead being pushed underneath the sidenav. Probably due to the wrong classes.
+# Bugs yet unfixed
+
+## Timeline page
+
+An error caused by a ul nested beneath a label, which apparently is not allowed. See under html-validation for details.
 
 # Validation
 
@@ -212,12 +223,14 @@ All together 8 files, 7 being in use on the site and one test file.
 
 A few notes on those images. As can be seen, it is the same error in all of them. The "offending" code comes from the hamburger-menu code I borrowed and adapted for this site.
 Unfortunately, I did not notice the problem early enough or I might have been able to find a solution to the issue. As it is, there are two options:
-    * Remove the offending code. Which, unfortunately, will make the responsiveness of the site to suffer.
-    * Leave it as-is for now.
+
+  * Remove the offending code. Which, unfortunately, will make the responsiveness of the site to suffer.
+  * Leave it as-is for now.
 
 The code works, even though with an error from the validator, so I opted to leave it for now. Not optimal so something to add to the to-do list.
 
-Compare it with index2.html. The same as index.html except that the hamburger-menu code has been removed (this is the test-file mentioned).
+Compare it with index2.html. The same as index.html except that the hamburger-menu code has been removed (this is the test-file mentioned). And here there are no
+errors.
 
 ![index2.html](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/html-validation/html-index2-result.PNG?raw=true)
 
@@ -228,7 +241,7 @@ The reason for that is: the online-checker with URL is not trustworthy.
 My site has been deployed to github pages. BUT when I tried to use a URL from there to validate against I got a lot more errors regarding classes and mismatched tags for things I have not written or even seen.
 It seems the URL input functionality of the validator drags in additonal css/html files that are unrelated to my project.
 
-Or rather: it did that on first try. Now it seems to mostly work as intended. It could not access my bibliography.html page so I still do not trust it. The erros and what not that are relevant are the same though so it should not matter.
+Or rather: it did that on first try. Now it seems to mostly work as intended. It could not access my bibliography.html page so I still do not trust it fully though. The erros and what not that are relevant are the same though so it should not matter.
 The html-files that I did upload to the validor are included as they were at the time in the html.zip file.
 
 
@@ -240,18 +253,21 @@ All files were validated using
 
 Currently offline.
 
+# To-do
+
+1. Fix the bug regarding the hamburger-menu so all files are considered error-free as far as the validator goes.
+2. Create a proper submit-script so the data is actually sent somewhere as well as making the thankyou.html able to acknowledge the data that was sent.
 
 # Credits
 
 Images found using google-image-search (more precise locations and/or credits can be provided if necessary, although I can not be sure that the site I found the images on are authorative).
 
 Hamburger-menu code:
-https://codepen.io/alvarotrigo/pen/ExwgbZv
+[codepen](https://codepen.io/alvarotrigo/pen/ExwgbZv)
 
 Youtube no-related-videos-and responsiveness:
-https://www.maxlaumeister.com/articles/hide-related-videos-in-youtube-embeds/
+[maxlaumeister](https://www.maxlaumeister.com/articles/hide-related-videos-in-youtube-embeds/)
 
-Some icono-graphy provided by Font-awsome
-
-https://fontawesome.com/
+Some icono-graphy provided by 
+[fontawsome](https://fontawesome.com/)
 

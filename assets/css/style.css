@@ -80,11 +80,9 @@ body {
   height: 100%;
 }
 
-.center-image-horiz {
-  margin-left: 25%;
-  margin-right: 25%;
-  width: 50%;
-  height:auto;
+#center-pic {
+  display: flex;
+  justify-content: center;
 }
 
 /* split1, split2, left-column, and right-column are used to split the screen horisontally into two columns. To make it easier to maintain responsiveness and the main content more visible */
@@ -281,8 +279,8 @@ input {
 
 #circle {
   /* makes page logo (bibliography) circular */
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
 }
 

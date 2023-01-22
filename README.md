@@ -306,14 +306,17 @@ control the webserver as such.
 SEO is always at 100%. Best practices is too, with two exceptions.
 1. Bibliography. "Image display dimensions should match natural aspect ratio." So it should, normally. In this case though I do not think it matters since the image it complains about has been styled into a circle for design purposes anyhow so the aspect ratio is not all that relevant here.
 2. The other instance is the media-page. The issues logged are part of someone elses code to make embedded videos responsive not show the "You may also want to see these videos", and for that uses javascript resources located on google-servers. The only way for me to get that score higher would be to just use iframe as-is with the ad-drawback back, plus it is not as responsive as this solution is.
-3. Accessability is always 97%, and the only thing it complains about is that the contrast ratio is a little low. I am not overly concerned about that at the moment but should of course be rectified. 
+3. Accessability is always 97%, and the only thing it complains about is that the contrast ratio is a little low. Since someone with such bad eyesight as me can read everything with no issues, I am not overly concerned about that at the moment but should of course be rectified. 
 
 
 # To-do
 
-1. Fix the bug regarding the hamburger-menu so all files are considered error-free as far as the validator goes.
-2. Create a proper submit-script so the data is actually sent somewhere as well as making the thankyou.html able to acknowledge the data that was sent.
+In order of importance:
+
+1. Fix everything in bugs-not-yet fixed
+2. Fix the bug regarding the hamburger-menu so all files are considered error-free as far as the validator goes.
 3. Improve the color-contrast
+4. Create a proper submit-script so the data is actually sent somewhere as well as making the thankyou.html able to acknowledge the data that was sent.
 
 # Credits
 

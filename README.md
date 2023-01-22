@@ -14,6 +14,9 @@ The site is entirely written in pure html/css, and can be seen live
 # Features
 ## Site-wide
 * The site is divided in three distinct areas. A top-bar with the title and a mock-date of when the encyclopedia was published and some copyright information.
+
+![topbar](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/topbar.PNG?raw=true)
+
 The main part of the screen is divided into two columns. The left-hand column is a navigation-bar for the site with some links to social media.
 The current page being viewed is highlighted.
 

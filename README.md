@@ -261,16 +261,38 @@ All pages have been run through lighthouse with similar results. To begin with, 
 
 Here are the reports, and some comments below.
 
+Index
+
 ![index](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/index.PNG?raw=true)
+
+Bibliography
+
 ![bilbiography](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/bibliography.PNG?raw=true)
+
+Timeline
+
 ![timeline](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/timeline.PNG?raw=true)
+
+Quotes
+
 ![quotes](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/quotes.PNG?raw=true)
+
+Media
+
 ![media](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/media.PNG?raw=true)
+
+Contact
+
 ![contact](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/contact.PNG?raw=true)
+
+Thank you
+
 [thankyou](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/lighthouse/thankyou.PNG?raw=true)
 
 First off, I do not pay much attention to the performance score since it fluctuates a little but has never dropped below 98%. And a lot of the tips lighthouse has provided in how to improve that value are things I have little to no control over since I do not
 control the webserver as such.
+
+
 
 # To-do
 

@@ -292,6 +292,10 @@ Thank you
 First off, I do not pay much attention to the performance score since it fluctuates a little but has never dropped below 98%. And a lot of the tips lighthouse has provided in how to improve that value are things I have little to no control over since I do not
 control the webserver as such.
 
+SEO is always at 100%. Best practices is too, with two exceptions.
+1. Bibliography. "Image display dimensions should match natural aspect ratio." So it should, normally. In this case though I do not think it matters since the image it complains about has been styled into a circle for design purposes anyhow so the aspect ratio is not all that relevant here.
+2. The other instance is the media-page. The issues logged are part of someone elses code to make embedded videos responsive not show the "You may also want to see these videos", and for that uses javascript resources located on google-servers. The only way for me to get that score higher would be to just use iframe as-is with the ad-drawback back, plus it is not as responsive as this solution is.
+3. Accessability is always 97%, and the only thing it complains about is that the contrast ratio is a little low. I am not overly concerned about that at the moment but should of course be rectified. 
 
 
 # To-do

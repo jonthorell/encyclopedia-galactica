@@ -192,17 +192,28 @@ The test-page used to come up with how the code should look to implement two col
 14. Validation on media.html complained about a deprecation option to iframe and that css should be used instead. The code was borrowed (and properly credited), but I decided to redo it in css instead of the old-fashioned way.
 See id #no-iframe-border in style.css.
 
-15. The main-table with the events is not resized the same way as the menu-tables when the resolution changes. So the page can end up looking like below, which is not how it is supposed to look. The two tables should always
-be equal in size horizontally. This was caused by the tags not being closed in the proper order as found by the validator.
-When tags had been closed properly the tables aligned correctly horizontally, although instead being pushed underneath the sidenav. The refactoring into two-column mode fixed that problem.
-
-![error-resize](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/resize-error.PNG?raw=true)
-
 # Bugs yet unfixed
 
 ## Timeline page
 
-An error caused by a ul nested beneath a label, which apparently is not allowed. See under html-validation for details.
+1. An error caused by a ul nested beneath a label, which apparently is not allowed. See under html-validation for details.
+2. The main-table with the events is not resized the same way as the menu-tables when the resolution changes. So the page can end up looking like below, which is not how it is supposed to look. The two tables should always
+be equal in size horizontally. This was caused by the tags not being closed in the proper order as found by the validator and missed one class in the definition of the larger tables.
+When tags had been closed properly the tables aligned correctly horizontally, although instead being pushed underneath the sidenav. The refactoring into two-column mode fixed that problem, or so I thought.
+It behaved as I expected it to in devtools, in mode dimensions:responsive. But when I checked the site more thoroughly on an iPhone I noticed that the bug had not in fact been fixed.
+
+![error-resize](https://github.com/jonthorell/encyclopedia-galactica/blob/main/assets/readme-files/resize-error.PNG?raw=true)
+
+## Site-wide
+
+1. The navigation bar still has an unwanted side-effect. As mentioned in number 1 in bugs encountered, the sidenav is removed from view in lower resolutions. I thought the same could be done with its parent div (that is, remove it from the DOM).
+Apparently I was wrong about the last part (but seems to be able to be doable using javascript).
+
+Which means the nav is hidden but the lefthand column still occupies the space. I thought it did not, but it was just not really noticable on a decent-sized monitor. It became very obvious on my iPhone though. It still works, but the screen is kind of cramped and things that should be centered are not. Well, in a way they are. In their own div, but not across the entire screen.
+
+Lesson learned from 2 above and this one: do not rely too much on the devtools. Use a proper mobile device more frequently than I did.
+
+
 
 # Validation
 

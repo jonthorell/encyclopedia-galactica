@@ -166,7 +166,7 @@ table td {
 }
 
 div p {
-  /* styles the p element if child of a div */
+  /* styles the p element if child of a div   */
   text-align: center;
   vertical-align: top;
   color: wheat;
